@@ -1,0 +1,166 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  transition: all;
+}
+body {
+  background-color: #273c75 !important;
+}
+
+.navbar {
+  margin-top: 2%;
+}
+
+a.nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.header-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.contact-button {
+  border-radius: 0;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 0;
+}
+
+#freelance {
+  padding-top: 10%;
+  color: white;
+  text-decoration: underline;
+}
+
+.about-section-wrapper {
+  width: 100%;
+  background: #353b48;
+}
+
+.test {
+  color: red;
+}
+
+.about-section-wrapper {
+  padding: 5%;
+  padding-bottom: 5%;
+}
+
+.about-inner-box {
+  width: 100%;
+  background: white;
+  padding: 5%;
+}
+
+.about-heading-wrapper {
+  padding-bottom: 3%;
+}
+
+.about-heading {
+  font-weight: 600;
+  border-bottom: 2px solid #1ff0d8;
+}
+
+.custom-hr {
+  padding-top: 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.services-wrapper {
+  padding-top: 3%;
+}
+
+.services-heading {
+  text-align: center;
+  color: #ddd4d4;
+}
+
+.services-sub-heading {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.card {
+  padding: 10%;
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+
+.card-heading {
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  font-weight: 600;
+}
+
+.card-text {
+  color: white;
+  margin-top: 10%;
+}
+
+.card-btn {
+  border-radius: 0px;
+  background: transparent;
+  padding: 15px;
+}
+
+.card-image {
+  align-self: center;
+  height: 150px;
+}
+.footer-wrapper {
+  justify-content: space-around;
+}
+
+.fas {
+  border: none !important;
+  color: white !important;
+}
+
+.footer-item {
+  color: white;
+  padding: 10px;
+  align-self: center;
+}
+
+.footer-text {
+  color: white;
+  align-self: center;
+}
+
+#linkedin:hover {
+  color: blue;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#github:hover {
+  color: grey;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+#mail:hover {
+  color: black;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
