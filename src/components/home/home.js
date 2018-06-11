@@ -7,18 +7,24 @@ import CustomNavbar from "../navbar";
 import ServicesSection from "./servicesSection";
 import Footer from "./footer";
 
-const Home = () => {
-  return (
-    <div className="home-wrapper">
-      <CustomNavbar />
+class Home extends React.Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = "#273c75"; // Set the style
+  }
 
-      <Header />
-      <AboutSection />
-      <div className="custom-hr" />
-      <ServicesSection />
-      <Footer />
-    </div>
-  );
-};
+  render() {
+    return (
+      <div className="home-wrapper">
+        <CustomNavbar />
+
+        <Header />
+        <AboutSection />
+        <div className="custom-hr" />
+        <ServicesSection />
+        <Footer />
+      </div>
+    );
+  }
+}
 
 export default Home;

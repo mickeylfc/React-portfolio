@@ -5,7 +5,7 @@ body {
   transition: all;
 }
 body {
-  background-color: #273c75 !important;
+  background-color: #273c75;
 }
 
 .navbar {
@@ -29,7 +29,7 @@ a.nav-link {
 
 .header-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .contact-button {
@@ -145,14 +145,14 @@ a.nav-link {
 }
 
 #linkedin:hover {
-  color: blue;
+  color: #0077b5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
 
 #github:hover {
-  color: grey;
+  color: #333;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;

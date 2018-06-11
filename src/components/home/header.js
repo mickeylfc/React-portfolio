@@ -1,15 +1,21 @@
 import React from "react";
 import { Col, Jumbotron, Button, Row, Container } from "reactstrap";
+import Typist from "react-typist";
 
 const Header = () => {
   return (
     <Container>
       <Col className="header">
-        <h2 className="header-text">
-          Hello, My name is{" "}
-          <span style={{ color: "red" }}>Michael English</span>
-        </h2>
-        <h2 className="header-text"> and I am a junior front-end developer </h2>
+        <Typist>
+          <h2 className="header-text">
+            Hello, My name is{" "}
+            <span style={{ color: "red" }}>Michael English</span>
+          </h2>
+          <h2 className="header-text">
+            {" "}
+            and I am a junior front-end developer
+          </h2>
+        </Typist>
       </Col>
       <Row>
         <Button className="mx-auto contact-button">Contact me</Button>

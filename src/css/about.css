@@ -1,4 +1,44 @@
-.about-wrapper {
-  background-color: red;
-  height: 100%;
+.about-header {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.name-heading {
+  padding-top: 3%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#name {
+  font-weight: 600;
+}
+
+#developer {
+  font-weight: 500;
+  color: #707070;
+}
+
+#developer-border {
+  border: 1px solid #00cec9;
+  width: 30%;
+}
+
+.about-text-wrapper {
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+.education {
+  padding-top: 5%;
 }
