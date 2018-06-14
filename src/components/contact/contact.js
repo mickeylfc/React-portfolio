@@ -52,21 +52,23 @@ class Contact extends React.Component {
                 >
                   <Form
                     method="POST"
-                    action="https://formspree.io/lfcfan16@gmail.com"
+                    data-netlify="true"
                     style={{ padding: "0px" }}
                     className="form"
+                    name="contact"
+                    data-netlify-honeypot="bot-field"
                   >
                     <FormInput
                       type="text"
                       icon={userIcon}
                       placeholder="Full name. . . ."
-                      name="text"
+                      name="name"
                     />
                     <FormInput
                       icon={emailIcon}
                       placeholder="Email address. . . ."
                       type="email"
-                      name="_replyto"
+                      name="email"
                     />
 
                     <div className="form-group ">
