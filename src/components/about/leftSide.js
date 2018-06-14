@@ -22,10 +22,12 @@ const LeftSide = () => {
       <div className="education">
         <Row style={{ color: "white" }}>
           <Col md="4">
-            <p>2008 - 2010</p>
+            <p>2008 - 2012</p>
           </Col>
           <Col md="8">
-            <p>Carlisle College</p>
+            <strong>
+              <p>Carlisle College</p>
+            </strong>
           </Col>
         </Row>
       </div>
@@ -34,21 +36,47 @@ const LeftSide = () => {
           <Col md="4" />
           <Col md="8">
             <p>
-              in many aspects of web development including the development of
-              websites for small businesses, PSD to HTML jobs, on-page SEO and
-              page speed optimisation. I’m constantly aiming to
+              I attended Carlisle College as part of a four year Electrical JTL
+              apprenticeship achieving an NVQ Level-3 Electro technical Services
+              (Electrical Installations) (Building and Structures)
             </p>
           </Col>
         </Row>
       </div>
-
+      <div className="education">
+        <Row style={{ color: "white" }}>
+          <Col md="4">
+            <p>2017</p>
+          </Col>
+          <Col md="8">
+            <strong>
+              <p>Internship at UEL IT services</p>
+            </strong>
+          </Col>
+        </Row>
+      </div>
+      <div className="education">
+        <Row style={{ color: "white" }}>
+          <Col md="4" />
+          <Col md="8">
+            <p>
+              I successfully completed a three months internship at the
+              University of East London. I worked in a team of three developing
+              a web application to help staff manage UEL managed systems and
+              products.
+            </p>
+          </Col>
+        </Row>
+      </div>
       <div className="education">
         <Row style={{ color: "white" }}>
           <Col md="4">
             <p>2014 - 2018</p>
           </Col>
           <Col md="8">
-            <p>University of East London (UEL)</p>
+            <strong>
+              <p>University of East London (UEL)</p>
+            </strong>
           </Col>
         </Row>
       </div>
@@ -57,13 +85,14 @@ const LeftSide = () => {
           <Col md="4" />
           <Col md="8">
             <p>
-              in many aspects of web development including the development of
-              websites for small businesses, PSD to HTML jobs, on-page SEO and
-              page speed optimisation. I’m constantly aiming to
+              I completed a degree in Computer Science at the University of East
+              London with a predicted 1st class honours degree (I will get my
+              results the end of July).
             </p>
           </Col>
         </Row>
       </div>
+
       <hr style={{ backgroundColor: "white" }} />
 
       <div className="education">

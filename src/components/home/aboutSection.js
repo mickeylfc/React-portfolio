@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Button } from "reactstrap";
-import avatar from "../../images/avatar.png";
+import Profile from "../../images/me2.jpg";
 
 const AboutSection = () => {
   return (
@@ -19,15 +19,19 @@ const AboutSection = () => {
             </Row>
           </div>
           <Row>
-            <Col md="4">
+            <Col className="about-mobile" md="4">
               <img
                 width="250px"
                 className="img-fluid"
-                src={avatar}
-                alt={avatar}
+                src={Profile}
+                alt={Profile}
               />
             </Col>
-            <Col style={{ alignSelf: "center" }} md="8">
+            <Col
+              className="about-mobile-text"
+              style={{ alignSelf: "center" }}
+              md="8"
+            >
               <p>
                 Hello, I'm a recent Computer Science graduate who is looking to
                 start working on some remote freelance projects for clients

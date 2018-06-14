@@ -1,6 +1,7 @@
 import React from "react";
 import { Col } from "reactstrap";
 import Avatar from "../../images/avatar.png";
+import Profile from "../../images/me.jpeg";
 
 const RightSide = () => {
   return (
@@ -12,7 +13,7 @@ const RightSide = () => {
       md="6"
     >
       <div className="avatar-wrapper">
-        <img className="avatar" src={Avatar} alt={Avatar} />
+        <img className="avatar" src={Profile} alt={Avatar} />
       </div>
 
       <div className="name-heading">
@@ -24,42 +25,64 @@ const RightSide = () => {
       </div>
       <div className="about-text-wrapper">
         <Col>
+          <strong>Background</strong>
+          <br />
+          <br />
           <p>
-            I’m a freelance web developer based in the West Midlands, UK,
-            working remotely for clients across the world. I have experience in
-            many aspects of web development including the development of
-            websites for small businesses, PSD to HTML jobs, on-page SEO and
-            page speed optimisation. I’m constantly aiming to
+            I was born and raised in a small city in the north of England called
+            Carlisle. After finishing high school, I worked a full-time job as
+            an apprentice electrician. during this time, I gained some essential
+            life skills. I learned how to work in teams, independently, work to
+            tight deadlines and communication skills. After completing the
+            apprenticeship and becoming a fully qualified electrician, I
+            realised this career choice was not for me.
           </p>
         </Col>
         <Col>
           <p>
-            improve my techniques and build on my skills in HTML, CSS, JS and
-            PHP so I welcome any job set before me. I’ll code each pixel of your
-            site from scratch, allowing me to pay close attention to detail and
-            deliver a strikingly unique end result. Want to see for yourself?
-            Check out my portfolio below, and then head over to the contact form
-            - I’d love to hear from you!
+            I have always enjoyed working with technology whether it's checking
+            the latest tech blogs or buying the must-have gadget. I knew I would
+            enjoy working in the technology industry. Moving forward, I got
+            accepted at a few universities in London to study Computer Science.
+            From this point, my life changed. I moved to London successfully
+            completing a BSc(Hons) Computer Science degree gaining a first-class
+            degree. During my studies, I was always trying to improve my web
+            development skills. For instance, working on my HTML, CSS and
+            JavaScript. Using these new techniques, I have been able to create
+            some websites and web apps for friends, family and clients. You can
+            check them out in the projects section.
+          </p>
+        </Col>
+        <Col>
+          <strong>Web Development</strong>
+          <br />
+          <br />
+          <p>
+            I'm always finding myself checking the latest trends in the web
+            development industry, such as learning new languages and frameworks
+            such as Ruby on Rails which I highly enjoy. Additionally, I have
+            been trying to improve my JavaScript by learning the ES6 and ES7
+            syntax. Also, I have challenged myself to learn the some of the
+            popular front end frameworks such as React.js and Vue.js. which I
+            love!
           </p>
         </Col>
         <Col>
           <p>
-            improve my techniques and build on my skills in HTML, CSS, JS and
-            PHP so I welcome any job set before me. I’ll code each pixel of your
-            site from scratch, allowing me to pay close attention to detail and
-            deliver a strikingly unique end result. Want to see for yourself?
-            Check out my portfolio below, and then head over to the contact form
-            - I’d love to hear from you!
+            If you would like to get in touch to find out more information about
+            me or if you would like to work together on a project. Please head
+            over to the contact form and send me an email. I'd love hear from
+            you!
           </p>
         </Col>
         <Col>
+          <strong>Hobbies</strong>
+          <br />
+          <br />
           <p>
-            improve my techniques and build on my skills in HTML, CSS, JS and
-            PHP so I welcome any job set before me. I’ll code each pixel of your
-            site from scratch, allowing me to pay close attention to detail and
-            deliver a strikingly unique end result. Want to see for yourself?
-            Check out my portfolio below, and then head over to the contact form
-            - I’d love to hear from you!
+            In my spare time when I am away from a computer screen, I like to
+            keep fit by going running and playing football. I also love watching
+            movies!
           </p>
         </Col>
       </div>

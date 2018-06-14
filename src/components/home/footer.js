@@ -12,28 +12,34 @@ const Footer = props => {
             Designed By Mickey English
           </div>
           <div className="d-flex ml-auto">
-            <div className=" d-flex justify-content-end footer-item">
-              <i
-                style={{ color: props.color }}
-                id="mail"
-                className="fas fa-envelope  fa-2x"
-              />
-            </div>
+            <a href="mailto:mickeyeng92@gmail.com?Subject=Mickey English Portfolio">
+              <div className=" d-flex justify-content-end footer-item">
+                <i
+                  style={{ color: props.color }}
+                  id="mail"
+                  className="fas fa-envelope  fa-2x"
+                />
+              </div>
+            </a>
 
-            <div className=" d-flex justify-content-end footer-item">
-              <i
-                style={{ color: props.color }}
-                id="linkedin"
-                className="fab fa-linkedin fa-2x"
-              />
-            </div>
-            <div className=" d-flex justify-content-end footer-item">
-              <i
-                style={{ color: props.color }}
-                id="github"
-                className="fab fa-github-square fa-2x"
-              />
-            </div>
+            <a href="https://www.linkedin.com/in/michael-english-930586a5/">
+              <div className=" d-flex justify-content-end footer-item">
+                <i
+                  style={{ color: props.color }}
+                  id="linkedin"
+                  className="fab fa-linkedin fa-2x"
+                />
+              </div>
+            </a>
+            <a href="https://github.com/mickeylfc">
+              <div className=" d-flex justify-content-end footer-item">
+                <i
+                  style={{ color: props.color }}
+                  id="github"
+                  className="fab fa-github-square fa-2x"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -25,7 +25,9 @@ const Header = () => {
         </Link>
       </Row>
       <Col>
-        <p id="freelance">Availble for freelance work</p>
+        <Link to="/contact">
+          <p id="freelance">Availble for freelance work</p>
+        </Link>
       </Col>
     </Container>
   );

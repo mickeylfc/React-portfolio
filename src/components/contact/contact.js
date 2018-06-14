@@ -7,13 +7,23 @@ import Footer from "../home/footer";
 import { Container, Row, Col, Button, Form } from "reactstrap";
 
 class Contact extends React.Component {
-  state = {
-    navBorder: ""
-  };
+  constructor(props) {
+    super();
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.state = {
+      navBorder: ""
+    };
+  }
 
   componentDidMount() {
     document.body.style.backgroundColor = "#00CEC9"; // Set the style
     this.setState({ navBorder: "1px solid white" });
+  }
+
+  handleSubmit() {
+    console.log("clicked");
   }
 
   render() {
@@ -88,7 +98,15 @@ class Contact extends React.Component {
                   </Form>
                 </div>
 
-                <input value="Submit" type="submit" id="send-message" />
+                <div className="button-div col-md-12 ">
+                  <Button
+                    onClick={this.handleSubmit}
+                    type="submit"
+                    id="send-message"
+                  >
+                    Send Message
+                  </Button>
+                </div>
 
                 <input
                   type="hidden"

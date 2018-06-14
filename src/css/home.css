@@ -209,3 +209,26 @@ a {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
 }
+
+@media (max-width: 575.98px) {
+  .about-inner-box {
+    width: 100%;
+    background: white;
+    padding: 10%;
+  }
+
+  .about-mobile {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .about-mobile-text {
+    padding-top: 10%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+  }
+}
