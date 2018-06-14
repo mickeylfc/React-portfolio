@@ -90,12 +90,14 @@ input:-webkit-autofill {
   color: black;
   border: 5px solid #00cec9;
   font-weight: 600;
+  outline: 0;
 }
 
 #send-message:hover {
   background-color: #00cec9;
   border: 5px solid #00cec9;
   color: white;
+  outline: 0;
 }
 
 .footer-padding {
