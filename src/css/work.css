@@ -1,0 +1,108 @@
+.custom-nav-tabs {
+  padding: 15px;
+  background: white;
+  border: none;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.nav-tabs-wrapper {
+  padding-bottom: 5%;
+}
+
+.project-box {
+  cursor: pointer;
+  padding: 0px;
+  background-image: url(/static/media/tech.2580e972.jpg);
+  background-position: center center;
+  height: 325px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  margin-bottom: 5px;
+  transition: transform 0.3s; /* Animation */
+}
+
+.project-box:hover {
+  transform: scale(1.04);
+  z-index: 1;
+}
+
+.project-box-text {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.col-no-padding {
+  padding-right: 5px;
+  padding-left: 0px;
+}
+
+.modal-header {
+  display: block;
+}
+
+.modal-content {
+  outline: 0;
+  padding: 15px;
+  border-radius: 0;
+  border: 0px;
+  border-bottom: 0.5px solid #1715122e;
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.modal-sub-heading {
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 3%;
+}
+
+.visit-site-button {
+  padding: 10px;
+  border-radius: 0;
+  background: transparent;
+  color: black;
+  border: 3px solid #00cec9;
+  font-weight: 500;
+}
+
+.cancel-site-button {
+  padding: 10px;
+  border-radius: 0;
+  background: transparent;
+  color: black;
+  border: 3px solid #d03658;
+  font-weight: 500;
+}
+
+.visit-site-button:hover {
+  background: #00cec9;
+  color: white;
+  border: none;
+  button:focus {
+    outline: 0;
+  }
+}
+.cancel-site-button:hover {
+  background: #d03658;
+  color: white;
+  border: none;
+  button:focus {
+    outline: 0;
+  }
+}
+
+.project-data {
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 10%;
+  background-color: #d13757;
+  border-radius: 0;
+  color: white;
+}

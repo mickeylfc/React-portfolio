@@ -1,10 +1,8 @@
 import React from "react";
-import CustomNavbar from "../navbar";
 import Skill from "./skill";
-import { Container, Row, Col, Progress } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 const LeftSide = () => {
-  const skills = [1, 2, 3, 4, 5, 6, 7];
   return (
     <Col
       style={{ background: "#E66767", padding: "20px", height: "100%" }}
@@ -12,7 +10,10 @@ const LeftSide = () => {
     >
       <Row>
         <Col md="2">
-          <i style={{ color: "white" }} class="fas fa-user-graduate fa-4x" />
+          <i
+            style={{ color: "white" }}
+            className="fas fa-user-graduate fa-4x"
+          />
         </Col>
         <Col style={{ alignSelf: "center" }} md="10">
           <h3 style={{ color: "white", fontWeight: "600" }}>Education</h3>
@@ -68,7 +69,7 @@ const LeftSide = () => {
       <div className="education">
         <Row>
           <Col md="2">
-            <i style={{ color: "white" }} class="fas fas fa-laptop fa-4x" />
+            <i style={{ color: "white" }} className="fas fas fa-laptop fa-4x" />
           </Col>
           <Col style={{ alignSelf: "center" }} md="10">
             <h3 style={{ color: "white", fontWeight: "600" }}>Skills</h3>

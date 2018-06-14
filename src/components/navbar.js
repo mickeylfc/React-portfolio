@@ -4,7 +4,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -32,26 +31,40 @@ class CustomNavbar extends React.Component {
     return (
       <Container>
         <Navbar style={{ background: "transparent" }} light expand="md">
-          <Link to="/">
-            <NavbarBrand>Mickey English</NavbarBrand>
-          </Link>
+          <NavLink tag={Link} to="/">
+            <div style={{ color: this.props.color }} className="navbar-brand">
+              Mickey English
+            </div>
+          </NavLink>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/about">
-                  <NavLink>About</NavLink>
-                </Link>
+                <NavLink
+                  tag={Link}
+                  to="/about"
+                  style={{ color: this.props.color }}
+                >
+                  About
+                </NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/contact">
-                  <NavLink>Contact</NavLink>
-                </Link>
+                <NavLink
+                  tag={Link}
+                  to="/contact"
+                  style={{ color: this.props.color }}
+                >
+                  Contact
+                </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <Link activeClassName="test" to="/work">
-                  <NavLink href="/work">Work</NavLink>
-                </Link>
+                <NavLink
+                  tag={Link}
+                  to="/work"
+                  style={{ color: this.props.color }}
+                >
+                  Work
+                </NavLink>
               </UncontrolledDropdown>
             </Nav>
           </Collapse>

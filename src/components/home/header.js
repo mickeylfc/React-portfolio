@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Jumbotron, Button, Row, Container } from "reactstrap";
+import { Col, Button, Row, Container } from "reactstrap";
 import Typist from "react-typist";
 
 const Header = () => {

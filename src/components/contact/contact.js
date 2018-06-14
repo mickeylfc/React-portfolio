@@ -1,17 +1,10 @@
 import React from "react";
 import "../../css/contact.css";
 import CustomNavbar from "../navbar";
+import Header from "../header";
 import FormInput from "./input";
 import Footer from "../home/footer";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Input
-} from "reactstrap";
+import { Container, Row, Col, Button, Form } from "reactstrap";
 
 class Contact extends React.Component {
   componentDidMount() {
@@ -25,14 +18,10 @@ class Contact extends React.Component {
 
     return (
       <div>
-        <CustomNavbar />
+        <CustomNavbar color="white" />
         <div className="about-wrapper">
           <Container>
-            <Row>
-              <Col>
-                <h1 className="about-header-text">Get in touch</h1>
-              </Col>
-            </Row>
+            <Header color="white" heading="Contact Me" />
 
             <div className="box">
               <Row className="justify-content-center">
@@ -63,7 +52,10 @@ class Contact extends React.Component {
                           }}
                           md="1"
                         >
-                          <i style={{ color: "#3ad3cf" }} class={messageIcon} />
+                          <i
+                            style={{ color: "#3ad3cf" }}
+                            className={messageIcon}
+                          />
                         </Col>
                         <Col style={{ padding: "0px" }} md="11">
                           <textarea

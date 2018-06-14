@@ -1,6 +1,5 @@
 import React from "react";
 import "../../css/home.css";
-import Nav from "../navbar";
 import Header from "./header";
 import AboutSection from "./aboutSection";
 import CustomNavbar from "../navbar";
@@ -15,7 +14,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-wrapper">
-        <CustomNavbar />
+        <CustomNavbar color="white" />
 
         <Header />
         <AboutSection />

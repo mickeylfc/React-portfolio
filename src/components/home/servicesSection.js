@@ -6,8 +6,6 @@ import ServiceBox from "./serviceBox";
 import { Container, Row, Col } from "reactstrap";
 
 const ServicesSection = () => {
-  const cardImages = [programming, responsive, improvement];
-
   const cardImages2 = [
     {
       image: programming,
@@ -40,8 +38,8 @@ const ServicesSection = () => {
         <Row style={{ paddingTop: "5%", paddingBottom: "10%" }}>
           {cardImages2.map((image, index) => {
             return (
-              <Col md="4">
-                <ServiceBox key={Date.now()} image={image} />
+              <Col key={index} md="4">
+                <ServiceBox image={image} />
               </Col>
             );
           })}

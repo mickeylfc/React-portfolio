@@ -1,6 +1,5 @@
 import React from "react";
-import CustomNavbar from "../navbar";
-import { Container, Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
 import Avatar from "../../images/avatar.png";
 
 const RightSide = () => {
@@ -13,7 +12,7 @@ const RightSide = () => {
       md="6"
     >
       <div className="avatar-wrapper">
-        <img className="avatar" src={Avatar} />
+        <img className="avatar" src={Avatar} alt={Avatar} />
       </div>
 
       <div className="name-heading">

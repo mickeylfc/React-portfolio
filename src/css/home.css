@@ -10,14 +10,8 @@ body {
 
 .navbar {
   margin-top: 2%;
-}
-
-a.nav-link {
-  color: white !important;
-}
-
-.navbar-brand {
-  color: white !important;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .header {

@@ -4,7 +4,8 @@ import Footer from "../home/footer";
 import "../../css/about.css";
 import RightSide from "./rightSide";
 import LeftSide from "./leftSide";
-import { Container, Row, Col } from "reactstrap";
+import Header from "../header";
+import { Container, Row } from "reactstrap";
 
 class About extends React.Component {
   componentDidMount() {
@@ -13,15 +14,8 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <CustomNavbar />
-        <Container>
-          <Row>
-            <Col>
-              <h1 className="about-header-text">About Me</h1>
-            </Col>
-          </Row>
-        </Container>
-
+        <CustomNavbar color="white" />
+        <Header heading="About" color="white" />
         <Container>
           <Row style={{ marginTop: "5%" }}>
             <RightSide />

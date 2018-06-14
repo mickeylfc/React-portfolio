@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Input,
-  FormText
-} from "reactstrap";
+import { Col, Input } from "reactstrap";
 
 const FormInput = props => {
   return (
