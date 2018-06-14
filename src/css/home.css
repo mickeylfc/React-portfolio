@@ -8,6 +8,10 @@ body {
   background-color: #273c75;
 }
 
+.nav-link:hover {
+  opacity: 0.7;
+}
+
 .navbar {
   margin-top: 2%;
   font-weight: 600;
@@ -21,17 +25,68 @@ body {
   padding-bottom: 5%;
 }
 
+.nav-border-bottom {
+  border-bottom: 1px solid #1cf1d8;
+}
+
+.nav-border-bottom-dark {
+  border-bottom: 1px solid black;
+}
+
 .header-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+
+a {
+  color: white;
 }
 
 .contact-button {
   border-radius: 0;
   padding: 15px;
   background: transparent;
-  border: 1px solid;
+  border: 2px solid #1ff0d8;
   border-radius: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-button:hover {
+  background: #1ff0d8;
+  color: black;
+  outline: 0;
+  border: 2px solid #1ff0d8;
+}
+
+.contact-button:hover a {
+  color: black;
+  text-decoration: none;
+}
+
+.read-more-button a {
+  color: black;
+}
+
+.read-more-button {
+  border-radius: 0;
+  padding: 15px;
+  background: transparent;
+  border: 2px solid #1ff0d8;
+  border-radius: 0;
+  color: black;
+  font-weight: 600;
+}
+
+.read-more-button:hover {
+  background: #1ff0d8;
+  outline: 0;
+  border: 2px solid #1ff0d8;
+}
+
+.read-more-button:hover a {
+  color: white;
+  text-decoration: none;
 }
 
 #freelance {
@@ -43,10 +98,6 @@ body {
 .about-section-wrapper {
   width: 100%;
   background: #353b48;
-}
-
-.test {
-  color: red;
 }
 
 .about-section-wrapper {

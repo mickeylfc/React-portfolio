@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { Col, Button, Row, Container } from "reactstrap";
 import Typist from "react-typist";
 
@@ -9,7 +11,7 @@ const Header = () => {
         <Typist>
           <h2 className="header-text">
             Hello, My name is{" "}
-            <span style={{ color: "red" }}>Michael English</span>
+            <span style={{ color: "#1ff0d8" }}>Michael English</span>
           </h2>
           <h2 className="header-text">
             {" "}
@@ -18,7 +20,9 @@ const Header = () => {
         </Typist>
       </Col>
       <Row>
-        <Button className="mx-auto contact-button">Contact me</Button>
+        <Link className="mx-auto" to="/contact">
+          <Button className="contact-button">Contact me</Button>
+        </Link>
       </Row>
       <Col>
         <p id="freelance">Availble for freelance work</p>

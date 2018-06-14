@@ -13,6 +13,8 @@ const FormInput = props => {
           <Input
             className="form-control input jusify-content-center"
             placeholder={props.placeholder}
+            name={props.name}
+            type={props.type}
           />
         </Col>
       </div>

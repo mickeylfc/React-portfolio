@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardText, Button } from "reactstrap";
+import { Card, CardText } from "reactstrap";
 
 const ServiceBox = props => {
   return (
@@ -14,7 +14,6 @@ const ServiceBox = props => {
       <h2 className="card-heading">{props.image.heading}</h2>
 
       <CardText>{props.image.text}</CardText>
-      <Button className="card-btn">Button</Button>
     </Card>
   );
 };

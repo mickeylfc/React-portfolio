@@ -23,6 +23,7 @@ class Work extends React.Component {
     // this.toggleModal1 = this.toggleModal1.bind(this);
     // this.toggleModal2 = this.toggleModal2.bind(this);
     this.state = {
+      navBorder: "",
       activeTab: "0",
       modal: false,
       modal2: false,
@@ -79,12 +80,13 @@ class Work extends React.Component {
 
   componentDidMount() {
     document.body.style.backgroundColor = "#F7F1E3";
+    this.setState({ navBorder: "nav-border-bottom" });
   }
 
   render() {
     return (
       <div>
-        <CustomNavbar color="black" />
+        <CustomNavbar color="black" workNavBorder={this.state.navBorder} />
         <Header heading="Projects" color="black" />
         <br />
         <br />

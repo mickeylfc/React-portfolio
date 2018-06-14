@@ -85,17 +85,13 @@
   background: #00cec9;
   color: white;
   border: none;
-  button:focus {
-    outline: 0;
-  }
+  border: 3px solid #00cec9;
 }
 .cancel-site-button:hover {
   background: #d03658;
   color: white;
   border: none;
-  button:focus {
-    outline: 0;
-  }
+  border: 3px solid #d03658;
 }
 
 .project-data {

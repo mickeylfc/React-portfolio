@@ -32,7 +32,12 @@ class CustomNavbar extends React.Component {
       <Container>
         <Navbar style={{ background: "transparent" }} light expand="md">
           <NavLink tag={Link} to="/">
-            <div style={{ color: this.props.color }} className="navbar-brand">
+            <div
+              style={{
+                color: this.props.color
+              }}
+              className="navbar-brand"
+            >
               Mickey English
             </div>
           </NavLink>
@@ -41,24 +46,36 @@ class CustomNavbar extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink
+                  className={this.props.aboutNavBorder}
+                  active
                   tag={Link}
                   to="/about"
-                  style={{ color: this.props.color }}
+                  style={{
+                    color: this.props.color,
+                    borderBottom: this.props.border
+                  }}
                 >
                   About
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
+                  className={this.props.contactNavBorder}
+                  active
                   tag={Link}
                   to="/contact"
-                  style={{ color: this.props.color }}
+                  style={{
+                    color: this.props.color,
+                    borderBottom: this.props.borderDark
+                  }}
                 >
                   Contact
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <NavLink
+                  className={this.props.workNavBorder}
+                  active
                   tag={Link}
                   to="/work"
                   style={{ color: this.props.color }}

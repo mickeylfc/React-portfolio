@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Row, Container } from "reactstrap";
+import { Link } from "react-router-dom";
+import { Col, Row, Container, Button } from "reactstrap";
 import avatar from "../../images/avatar.png";
 
 const AboutSection = () => {
@@ -28,18 +29,20 @@ const AboutSection = () => {
             </Col>
             <Col style={{ alignSelf: "center" }} md="8">
               <p>
-                I’m a freelance web developer based in the West Midlands, UK,
-                working remotely for clients across the world. I have experience
-                in many aspects of web development including the development of
-                websites for small businesses, PSD to HTML jobs, on-page SEO and
-                page speed optimisation. I’m constantly aiming to improve my
-                techniques and build on my skills in HTML, CSS, JS and PHP so I
-                welcome any job set before me. I’ll code each pixel of your site
-                from scratch, allowing me to pay close attention to detail and
-                deliver a strikingly unique end result. Want to see for
-                yourself? Check out my portfolio below, and then head over to
-                the contact form - I’d love to hear from you!
+                Hello, I'm a recent Computer Science graduate who is looking to
+                start working on some remote freelance projects for clients
+                around the world. Early on in my degree, I realised I have a
+                strong passion for web development.
               </p>
+              <p>
+                I have experience in many aspects of web development, including
+                design, front-end and back-end development. To read my full
+                profile, click the read more button to find out my personal
+                skills, education, experience and hobbies.
+              </p>
+              <Link to="/about">
+                <Button className="read-more-button">Read more</Button>
+              </Link>
             </Col>
           </Row>
         </div>

@@ -8,13 +8,20 @@ import Header from "../header";
 import { Container, Row } from "reactstrap";
 
 class About extends React.Component {
+  state = {
+    navBorder: ""
+  };
+
   componentDidMount() {
     document.body.style.backgroundColor = "#808E9B"; // Set the style
+
+    this.setState({ navBorder: "nav-border-bottom" });
   }
+
   render() {
     return (
       <div>
-        <CustomNavbar color="white" />
+        <CustomNavbar color="white" aboutNavBorder={this.state.navBorder} />
         <Header heading="About" color="white" />
         <Container>
           <Row style={{ marginTop: "5%" }}>

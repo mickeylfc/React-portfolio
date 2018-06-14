@@ -7,8 +7,13 @@ import Footer from "../home/footer";
 import { Container, Row, Col, Button, Form } from "reactstrap";
 
 class Contact extends React.Component {
+  state = {
+    navBorder: ""
+  };
+
   componentDidMount() {
     document.body.style.backgroundColor = "#00CEC9"; // Set the style
+    this.setState({ navBorder: "1px solid white" });
   }
 
   render() {
@@ -18,7 +23,7 @@ class Contact extends React.Component {
 
     return (
       <div>
-        <CustomNavbar color="white" />
+        <CustomNavbar color="white" borderDark={this.state.navBorder} />
         <div className="about-wrapper">
           <Container>
             <Header color="white" heading="Contact Me" />
@@ -35,11 +40,23 @@ class Contact extends React.Component {
                   className="form-box col-md-12
                 "
                 >
-                  <Form style={{ padding: "0px" }} className="form">
-                    <FormInput icon={userIcon} placeholder="Full name. . . ." />
+                  <Form
+                    method="POST"
+                    action="https://formspree.io/lfcfan16@gmail.com"
+                    style={{ padding: "0px" }}
+                    className="form"
+                  >
+                    <FormInput
+                      type="text"
+                      icon={userIcon}
+                      placeholder="Full name. . . ."
+                      name="text"
+                    />
                     <FormInput
                       icon={emailIcon}
                       placeholder="Email address. . . ."
+                      type="email"
+                      name="_replyto"
                     />
 
                     <div className="form-group ">
@@ -63,15 +80,21 @@ class Contact extends React.Component {
                             className="form-control"
                             style={{ width: "100%" }}
                             placeholder="Write your message here . . ."
+                            name="message"
                           />
                         </Col>
                       </div>
                     </div>
                   </Form>
                 </div>
-                <div className="button-div col-md-12 ">
-                  <Button id="send-message">Send Message</Button>
-                </div>
+
+                <input value="Submit" type="submit" id="send-message" />
+
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://site.io/thanks.html"
+                />
               </Row>
             </div>
           </Container>
