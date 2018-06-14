@@ -47,6 +47,7 @@ class Contact extends React.Component {
                     className="form"
                     name="contact"
                   >
+                    <input type="hidden" name="form-name" value="contact" />
                     <FormInput
                       type="text"
                       icon={userIcon}
