@@ -94,6 +94,7 @@ input:-webkit-autofill {
 
 #send-message:hover {
   background-color: #00cec9;
+  border: 5px solid #00cec9;
   color: white;
 }
 

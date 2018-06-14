@@ -40,12 +40,12 @@ class Contact extends React.Component {
                   className="form-box col-md-12
                 "
                 >
-                  <Form
+                  <form
                     method="POST"
+                    data-netlify="true"
                     style={{ padding: "0px" }}
                     className="form"
                     name="contact"
-                    netlify
                   >
                     <FormInput
                       type="text"
@@ -86,13 +86,13 @@ class Contact extends React.Component {
                         </Col>
                       </div>
                     </div>
-                  </Form>
+                  </form>
                 </div>
 
                 <div className="button-div col-md-12 ">
-                  <Button type="submit" id="send-message">
+                  <button type="submit" id="send-message">
                     Send Message
-                  </Button>
+                  </button>
                 </div>
 
                 <input
