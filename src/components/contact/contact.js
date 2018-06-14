@@ -42,10 +42,11 @@ class Contact extends React.Component {
                 >
                   <form
                     method="POST"
-                    data-netlify="true"
                     style={{ padding: "0px" }}
                     className="form"
                     name="contact"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
                   >
                     <input type="hidden" name="form-name" value="contact" />
                     <FormInput
@@ -95,12 +96,6 @@ class Contact extends React.Component {
                     Send Message
                   </button>
                 </div>
-
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://site.io/thanks.html"
-                />
               </Row>
             </div>
           </Container>
