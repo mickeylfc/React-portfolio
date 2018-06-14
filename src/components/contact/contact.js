@@ -7,23 +7,13 @@ import Footer from "../home/footer";
 import { Container, Row, Col, Button, Form } from "reactstrap";
 
 class Contact extends React.Component {
-  constructor(props) {
-    super();
-
-    this.handleSubmit = this.handleSubmit.bind(this);
-
-    this.state = {
-      navBorder: ""
-    };
-  }
+  state = {
+    navBorder: ""
+  };
 
   componentDidMount() {
     document.body.style.backgroundColor = "#00CEC9"; // Set the style
     this.setState({ navBorder: "1px solid white" });
-  }
-
-  handleSubmit() {
-    console.log("clicked");
   }
 
   render() {
@@ -52,11 +42,10 @@ class Contact extends React.Component {
                 >
                   <Form
                     method="POST"
-                    data-netlify="true"
                     style={{ padding: "0px" }}
                     className="form"
                     name="contact"
-                    data-netlify-honeypot="bot-field"
+                    netlify
                   >
                     <FormInput
                       type="text"
@@ -101,11 +90,7 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="button-div col-md-12 ">
-                  <Button
-                    onClick={this.handleSubmit}
-                    type="submit"
-                    id="send-message"
-                  >
+                  <Button type="submit" id="send-message">
                     Send Message
                   </Button>
                 </div>
