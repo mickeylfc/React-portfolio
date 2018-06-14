@@ -4,7 +4,7 @@ import CustomNavbar from "../navbar";
 import Header from "../header";
 import FormInput from "./input";
 import Footer from "../home/footer";
-import { Container, Row, Col, Button, Form } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 
 class Contact extends React.Component {
   state = {
@@ -92,9 +92,9 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="button-div col-md-12 ">
-                  <button type="submit" id="send-message">
+                  <Button type="submit" id="send-message">
                     Send Message
-                  </button>
+                  </Button>
                 </div>
               </Row>
             </div>
