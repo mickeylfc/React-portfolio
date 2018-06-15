@@ -25,6 +25,10 @@ body {
   padding-bottom: 5%;
 }
 
+.Cursor--blinking {
+  display: none !important;
+}
+
 .nav-border-bottom {
   border-bottom: 1px solid #1cf1d8;
 }

@@ -4,7 +4,7 @@ import CustomNavbar from "../navbar";
 import Header from "../header";
 import FormInput from "./input";
 import Footer from "../home/footer";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Col, Button } from "reactstrap";
 
 class Contact extends React.Component {
   state = {
@@ -28,67 +28,60 @@ class Contact extends React.Component {
           <Container>
             <Header color="white" heading="Contact Me" />
 
-            <div className="box">
-              <Row className="justify-content-center">
-                <Col md="8">
+            <form
+              method="POST"
+              style={{ padding: "0px" }}
+              name="contact"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <div className="box">
+                <Col md="12">
                   <h3 className="header-text">
                     Get in touch and say hello. Whether you have a work enquiry
                     or simply want to find out more, let’s talk.
                   </h3>
                 </Col>
+
                 <div
                   className="form-box col-md-12
-                "
+            "
                 >
-                  <form
-                    method="POST"
-                    style={{ padding: "0px" }}
-                    className="form"
-                    name="contact"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                  >
-                    <input type="hidden" name="form-name" value="contact" />
-                    <FormInput
-                      type="text"
-                      icon={userIcon}
-                      placeholder="Full name. . . ."
-                      name="name"
-                    />
-                    <FormInput
-                      icon={emailIcon}
-                      placeholder="Email address. . . ."
-                      type="email"
-                      name="email"
-                    />
+                  <input type="hidden" name="form-name" value="contact" />
+                  <FormInput
+                    type="text"
+                    icon={userIcon}
+                    placeholder="Full name. . . ."
+                    name="name"
+                  />
+                  <FormInput
+                    icon={emailIcon}
+                    placeholder="Email address. . . ."
+                    type="email"
+                    name="email"
+                  />
 
-                    <div className="form-group ">
-                      <div className="d-flex textarea-container">
-                        <Col
-                          className="input-icon"
-                          style={{
-                            padding: "0px",
-                            alignSelf: "start"
-                          }}
-                          md="1"
-                        >
-                          <i
-                            style={{ color: "#3ad3cf" }}
-                            className={messageIcon}
-                          />
-                        </Col>
-                        <Col style={{ padding: "0px" }} md="11">
-                          <textarea
-                            rows="10"
-                            className="form-control"
-                            style={{ width: "100%" }}
-                            placeholder="Write your message here . . ."
-                            name="message"
-                          />
-                        </Col>
-                      </div>
-                    </div>
-                  </form>
+                  <div className="d-flex textarea-container">
+                    <Col
+                      className="input-icon"
+                      style={{
+                        padding: "0px",
+                        alignSelf: "start"
+                      }}
+                      md="1"
+                    >
+                      <i style={{ color: "#3ad3cf" }} className={messageIcon} />
+                    </Col>
+                    <Col style={{ padding: "0px" }} md="11">
+                      <textarea
+                        rows="10"
+                        className="form-control"
+                        style={{ width: "100%" }}
+                        placeholder="Write your message here . . ."
+                        name="message"
+                      />
+                    </Col>
+                  </div>
                 </div>
 
                 <div className="button-div col-md-12 ">
@@ -96,8 +89,8 @@ class Contact extends React.Component {
                     Send Message
                   </Button>
                 </div>
-              </Row>
-            </div>
+              </div>
+            </form>
           </Container>
         </div>
         <br />

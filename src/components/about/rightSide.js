@@ -62,9 +62,8 @@ const RightSide = () => {
             development industry, such as learning new languages and frameworks
             such as Ruby on Rails which I highly enjoy. Additionally, I have
             been trying to improve my JavaScript by learning the ES6 and ES7
-            syntax. Also, I have challenged myself to learn the some of the
-            popular front end frameworks such as React.js and Vue.js. which I
-            love!
+            syntax. Also, I have challenged myself to learn some of the popular
+            front end frameworks such as React.js and Vue.js. which I love!
           </p>
         </Col>
         <Col>

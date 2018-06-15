@@ -57,7 +57,7 @@ const ProjectModal = props => {
             </ModalBody>
 
             <ModalFooter>
-              <a href={props.url}>
+              <a href={props.url} target="_blank">
                 <Button className="visit-site-button" color="primary">
                   Visit the website
                 </Button>

@@ -3,12 +3,12 @@ import CustomNavbar from "../navbar";
 import Footer from "../home/footer";
 import "../../css/work.css";
 import Boxes from "./boxes";
-import Techworld from "../../images/techSmall.jpg";
-import Child from "../../images/childSmall.jpg";
-import Uni from "../../images/uniSmall.jpg";
-import Portfolio from "../../images/portfolioSmall.jpg";
-import Graphic from "../../images/graphicSmall.jpg";
-import Internship from "../../images/itservicesSmall.jpg";
+import Techworld from "../../images/techSmall.png";
+import Child from "../../images/childSmall.png";
+import Uni from "../../images/uniSmall.png";
+import Portfolio from "../../images/portfolioSmall.png";
+import Graphic from "../../images/graphicSmall.png";
+import Internship from "../../images/itservicesSmall.png";
 import ProjectModal from "./ProjectModal";
 import ProjectTabs from "./projectTabs";
 
@@ -216,7 +216,7 @@ class Work extends React.Component {
                   isOpen={this.state.modal6}
                   toggleModal={this.toggleModal6}
                   body={
-                    "I worked as an intern at UEL IT Services for three months where I worked with a team of three developers including myself, and a project manager. We were asked to develop a platform to help the IT services staff access information about all the different service the UEL IT services manage. We developed the application in PHP with a MySQL database. This project taught me how to work better in teams and gave me an understanding of a working environment as a developer."
+                    "I worked as an intern at UEL IT Services for three months where I worked with a team of three developers including myself, and a project manager. We were asked to develop a platform to help the IT services staff access information about all the different service the UEL IT services manage. We developed the application in PHP with a MySQL database. This project taught me how to work better in teams and gave me an understanding of a working environment as a developer. Also, the position, hugely improved my management skills by organizing and prioritising workloads to meet deadlines and to work better under pressure."
                   }
                   title={"Internship Team Project"}
                   feature1="CRUD"
