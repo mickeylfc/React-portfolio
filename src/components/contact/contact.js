@@ -32,8 +32,7 @@ class Contact extends React.Component {
               method="POST"
               style={{ padding: "0px" }}
               name="contact"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              netlify
             >
               <div className="box">
                 <Col md="12">
