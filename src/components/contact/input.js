@@ -15,6 +15,7 @@ const FormInput = props => {
             placeholder={props.placeholder}
             name={props.name}
             type={props.type}
+            reply={props.reply}
           />
         </Col>
       </div>

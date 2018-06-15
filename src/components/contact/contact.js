@@ -29,10 +29,10 @@ class Contact extends React.Component {
             <Header color="white" heading="Contact Me" />
 
             <form
-              method="POST"
               style={{ padding: "0px" }}
               name="contact"
-              netlify
+              action="https://formspree.io/mickeyeng92@gmail.com"
+              method="POST"
             >
               <div className="box">
                 <Col md="12">
@@ -46,7 +46,6 @@ class Contact extends React.Component {
                   className="form-box col-md-12
             "
                 >
-                  <input type="hidden" name="form-name" value="contact" />
                   <FormInput
                     type="text"
                     icon={userIcon}
@@ -57,7 +56,17 @@ class Contact extends React.Component {
                     icon={emailIcon}
                     placeholder="Email address. . . ."
                     type="email"
-                    name="email"
+                    name="reply_to"
+                  />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://site.io/thanks.html"
+                  />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New submission!"
                   />
 
                   <div className="d-flex textarea-container">
