@@ -30,7 +30,13 @@ class Work extends React.Component {
       modal3: false,
       modal4: false,
       modal5: false,
-      modal6: false
+      modal6: false,
+      techworld: Techworld,
+      child: Child,
+      uni: Uni,
+      portfolio: Portfolio,
+      graphic: Graphic,
+      internship: Internship
     };
   }
 
@@ -125,7 +131,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal1}
                   nameLineOne="TECHNOLOGY"
                   nameLineTwo="BLOG"
-                  image={Techworld}
+                  image={this.state.techworld}
                   number={1}
                 />
 
@@ -146,7 +152,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal2}
                   nameLineOne="CHILDMINDING"
                   nameLineTwo="BUSINESS"
-                  image={Child}
+                  image={this.state.child}
                   number={2}
                 />
                 <ProjectModal
@@ -171,7 +177,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal3}
                   nameLineOne="UNIVERSITY FINAL"
                   nameLineTwo="YEAR PROJECT"
-                  image={Uni}
+                  image={this.state.uni}
                 />
                 <ProjectModal
                   isOpen={this.state.modal4}
@@ -191,7 +197,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal4}
                   nameLineOne="PORTFOLIO"
                   nameLineTwo=""
-                  image={Portfolio}
+                  image={this.state.portfolio}
                 />
                 <ProjectModal
                   isOpen={this.state.modal5}
@@ -210,7 +216,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal5}
                   nameLineOne="CLIENTS GRAPHIC "
                   nameLineTwo=" DESIGN PORTFOLIO"
-                  image={Graphic}
+                  image={this.state.graphic}
                 />
                 <ProjectModal
                   isOpen={this.state.modal6}
@@ -232,7 +238,7 @@ class Work extends React.Component {
                   toggleModal={this.toggleModal6}
                   nameLineOne="INTERNSHIP"
                   nameLineTwo="TEAM PROJECT"
-                  image={Internship}
+                  image={this.state.internship}
                 />
               </Row>
             </Container>
