@@ -171,6 +171,9 @@ class Work extends React.Component {
                   projectDate="January - April 2018"
                   projectTech="HTML, CSS, CSS-GRID, JavaScript, Bootsrap, Ruby on Rails, Heroku"
                   url="https://myuel-v2.herokuapp.com/users/sign_in"
+                  login="To login as a guest, use the following"
+                  username="Username = u1438760@uel.ac.uk"
+                  password="Password = password"
                 />
                 <Boxes
                   isOpen={this.state.modal3}
@@ -233,6 +236,9 @@ class Work extends React.Component {
                   projectDate="April-June 2017"
                   projectTech="HTML, CSS, JavaScript, PHP, MySQL,"
                   url="https://uel-it-services.herokuapp.com/"
+                  login="To login as a guest, use the following"
+                  username="Username = guest"
+                  password="Password = password"
                 />
                 <Boxes
                   toggleModal={this.toggleModal6}

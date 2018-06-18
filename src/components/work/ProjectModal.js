@@ -53,6 +53,9 @@ const ProjectModal = props => {
                   <p>Date: {props.projectDate}</p>
                   <p>Technology: {props.projectTech}</p>
                 </Jumbotron>
+                <p>{props.login}</p>
+                <p>{props.username}</p>
+                <p>{props.password}</p>
               </Col>
             </ModalBody>
 
