@@ -31,8 +31,9 @@ class Contact extends React.Component {
             <form
               style={{ padding: "0px" }}
               name="contact"
-              action="https://formspree.io/mickeyeng92@gmail.com"
+              action="https://formcarry.com/s/r1z7TIfzX"
               method="POST"
+              accept-charset="UTF-8"
             >
               <div className="box">
                 <Col md="12">
@@ -64,7 +65,11 @@ class Contact extends React.Component {
                     name="_subject"
                     value="New submission!"
                   />
-                  <input type="hidden" name="_next" value="./thanks.js" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="www.mickeyenglish.co.uk/thanks"
+                  />
 
                   <div className="d-flex textarea-container">
                     <Col
