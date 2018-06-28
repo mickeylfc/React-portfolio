@@ -107,6 +107,35 @@ input:-webkit-autofill {
   margin-top: 10%;
 }
 
+.thanks-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jumbotron {
+  background: white;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.thanks-btn {
+  margin-top: 10%;
+}
+
+#thanks-back-btn {
+  padding: 20px;
+  border-radius: 0;
+  color: #fff;
+  margin-top: 4%;
+  background: rgb(0, 206, 201);
+  border: white;
+}
+
+#thanks-back-btn:hover {
+  background: #273c75;
+}
+
 @media (max-width: 575.98px) {
   .box {
     padding: 40px;

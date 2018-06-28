@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Input } from "reactstrap";
-
 const FormInput = props => {
   return (
     <div className="form-group ">
@@ -17,7 +16,11 @@ const FormInput = props => {
             type={props.type}
             reply={props.reply}
           />
-          <input type="hidden" name="_next" value="./thanks.js" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://www.mickeyenglish.co.uk/thanks"
+          />
         </Col>
       </div>
     </div>
