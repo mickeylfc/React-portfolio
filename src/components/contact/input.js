@@ -17,6 +17,7 @@ const FormInput = props => {
             type={props.type}
             reply={props.reply}
           />
+          <input type="hidden" name="_next" value="./thanks.js" />
         </Col>
       </div>
     </div>

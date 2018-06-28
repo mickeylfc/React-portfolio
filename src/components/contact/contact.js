@@ -58,7 +58,7 @@ class Contact extends React.Component {
                     type="email"
                     name="reply_to"
                   />
-                  <input type="hidden" name="_next" value="./thanks.js" />
+
                   <input
                     type="hidden"
                     name="_subject"
