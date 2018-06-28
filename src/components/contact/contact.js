@@ -64,11 +64,7 @@ class Contact extends React.Component {
                     name="_subject"
                     value="New submission!"
                   />
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="https://mickeyenglish.co.uk/thanks"
-                  />
+                  <input type="hidden" name="_next" value="./thanks.js" />
 
                   <div className="d-flex textarea-container">
                     <Col
