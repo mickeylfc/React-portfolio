@@ -101,6 +101,7 @@
   background-color: #d13757;
   border-radius: 0;
   color: white;
+  text-align: left;
 }
 
 @media (max-width: 950px) {

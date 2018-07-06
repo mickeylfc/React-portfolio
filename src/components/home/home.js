@@ -5,20 +5,27 @@ import AboutSection from "./aboutSection";
 import CustomNavbar from "../navbar";
 import ServicesSection from "./servicesSection";
 import Footer from "./footer";
+import ProjectsSection from "./projectsSection";
 
 class Home extends React.Component {
   componentDidMount() {
-    document.body.style.backgroundColor = "#273c75"; // Set the style
+    document.body.style.background = `linear-gradient(
+      141deg,
+      #173e96 0,
+      #202846 71%,
+      #173e96 100%
+    )`;
+    document.body.style.backgroundAttachment = "fixed";
   }
 
   render() {
     return (
       <div className="home-wrapper">
         <CustomNavbar color="white" />
-
         <Header />
         <AboutSection />
-        <div className="custom-hr" />
+
+        <ProjectsSection />
         <ServicesSection />
         <Footer />
       </div>

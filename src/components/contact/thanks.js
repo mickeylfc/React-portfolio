@@ -1,7 +1,7 @@
 import React from "react";
 import CustomNavbar from "../navbar";
 import Footer from "../home/footer";
-import { Col, Container, Jumbotron, Button } from "reactstrap";
+import { Container, Jumbotron, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import Typist from "react-typist";
 

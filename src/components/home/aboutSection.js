@@ -5,8 +5,8 @@ import Profile from "../../images/me2.jpg";
 
 const AboutSection = () => {
   return (
-    <div className="about-section-wrapper">
-      <Container>
+    <div>
+      <Container className="about-section-wrapper">
         <div className="about-inner-box">
           <div className="about-heading-wrapper">
             <Row>

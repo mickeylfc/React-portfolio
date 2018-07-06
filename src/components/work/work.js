@@ -20,8 +20,7 @@ class Work extends React.Component {
     super(props);
 
     this.toggle = this.toggle.bind(this);
-    // this.toggleModal1 = this.toggleModal1.bind(this);
-    // this.toggleModal2 = this.toggleModal2.bind(this);
+
     this.state = {
       navBorder: "",
       activeTab: "0",
@@ -85,7 +84,7 @@ class Work extends React.Component {
   }
 
   componentDidMount() {
-    document.body.style.backgroundColor = "#F7F1E3";
+    document.body.style.background = "#F7F1E3";
     this.setState({ navBorder: "nav-border-bottom" });
   }
 
@@ -170,7 +169,7 @@ class Work extends React.Component {
                   projectName="MyUel, A student engagement and social activities web application"
                   projectDate="January - April 2018"
                   projectTech="HTML, CSS, CSS-GRID, JavaScript, Bootsrap, Ruby on Rails, Heroku"
-                  url="https://myuel-v2.herokuapp.com/users/sign_in"
+                  url="https://myuel-final-project-v3.herokuapp.com"
                   login="To login as a guest, use the following"
                   username="Username = u1438760@uel.ac.uk"
                   password="Password = password"
@@ -317,62 +316,3 @@ class Work extends React.Component {
 }
 
 export default Work;
-
-// boxes = [
-//   {
-//     techworld: (
-//       <Boxes
-//         toggleModal1={this.toggleModal1}
-//         nameLineOne="TECHNOLOGY"
-//         nameLineTwo="BLOG"
-//         image={Techworld}
-//         number={1}
-//       />
-//     )
-//   },
-
-//   {
-//     childminding: (
-//       <Boxes
-//         nameLineOne="CHILDMINDING"
-//         nameLineTwo="BUSINESS"
-//         image={Child}
-//       />
-//     )
-//   },
-
-//   {
-//     finaProject: (
-//       <Boxes
-//         nameLineOne="UNIVERSITY FINAL"
-//         nameLineTwo="YEAR PROJECT"
-//         image={Uni}
-//       />
-//     )
-//   },
-//   {
-//     portfolio: (
-//       <Boxes nameLineOne="PORTFOLIO" nameLineTwo="" image={Portfolio} />
-//     )
-//   },
-
-//   {
-//     graphicDesign: (
-//       <Boxes
-//         nameLineOne="CLIENTS GRAPHIC "
-//         nameLineTwo=" DESIGN PORTFOLIO"
-//         image={Graphic}
-//       />
-//     )
-//   },
-
-//   {
-//     internship: (
-//       <Boxes
-//         nameLineOne="INTERNSHIP"
-//         nameLineTwo="TEAM PROJECT"
-//         image={Internship}
-//       />
-//     )
-//   }
-// ];

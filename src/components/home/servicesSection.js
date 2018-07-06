@@ -1,7 +1,7 @@
 import React from "react";
-import programming from "../../images/programming.svg";
+import programming from "../../images/development.svg";
 import responsive from "../../images/responsive.svg";
-import improvement from "../../images/settings.svg";
+import improvement from "../../images/maintenance.svg";
 import ServiceBox from "./serviceBox";
 import { Container, Row, Col } from "reactstrap";
 
@@ -30,7 +30,6 @@ const ServicesSection = () => {
   return (
     <div className="services-wrapper">
       <Container>
-        <h2 className="services-heading">SERVICES</h2>
         <Col md="12">
           <h2 className="services-sub-heading">What I can offer you</h2>
         </Col>
@@ -38,7 +37,7 @@ const ServicesSection = () => {
         <Row style={{ paddingTop: "5%", paddingBottom: "10%" }}>
           {cardImages2.map((image, index) => {
             return (
-              <Col key={index} md="4">
+              <Col className="service-box" key={index} md="4">
                 <ServiceBox image={image} />
               </Col>
             );

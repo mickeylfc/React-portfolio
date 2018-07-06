@@ -12,7 +12,7 @@ class Contact extends React.Component {
   };
 
   componentDidMount() {
-    document.body.style.backgroundColor = "#00CEC9"; // Set the style
+    document.body.style.background = "#00CEC9"; // Set the style
     this.setState({ navBorder: "1px solid white" });
   }
 

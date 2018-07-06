@@ -85,9 +85,15 @@ const LeftSide = () => {
           <Col md="4" />
           <Col md="8">
             <p>
-              I completed a degree in Computer Science at the University of East
-              London with a predicted 1st class honours degree (I will get my
-              results the end of July).
+              Achieved a First-class degree at the University of East London
+              studying BSc (Hons) in Computer Sciences.
+            </p>
+            <p>
+              Throughout my degree, I learned the fundamentals and advanced
+              topics in Computer Science. I learned the basics of software
+              development and web development, Artificial intelligence, Cyber
+              Security, Advanced network programming using Java, Distributed
+              Systems, Database Modelling and Mobile Application development.
             </p>
           </Col>
         </Row>

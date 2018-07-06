@@ -13,7 +13,8 @@ class About extends React.Component {
   };
 
   componentDidMount() {
-    document.body.style.backgroundColor = "#808E9B"; // Set the style
+    document.body.style.background = "#808E9B";
+    // document.body.style.backgroundColor = "#808E9B"; // Set the style
 
     this.setState({ navBorder: "nav-border-bottom" });
   }
