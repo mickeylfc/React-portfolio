@@ -479,7 +479,7 @@ a:hover {
   }
 
   .btn-portfolio {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border: none;
   }
 
@@ -501,6 +501,7 @@ a:hover {
 
   #view-more-text {
     text-align: center;
+    width: 50%;
   }
 
   .about-mobile-text {
@@ -617,6 +618,10 @@ a:hover {
     align-self: start;
   }
 
+  #view-more-text {
+    width: 50%;
+  }
+
   .box-wrapper {
     grid-template-areas:
       ". . . . . ."
@@ -650,6 +655,10 @@ a:hover {
   #freelance {
     padding-top: 15%;
     text-align: center;
+  }
+
+  #view-more-text {
+    width: 50%;
   }
 }
 
