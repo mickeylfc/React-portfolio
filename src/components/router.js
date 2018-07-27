@@ -5,18 +5,21 @@ import About from "./about/about";
 import Contact from "./contact/contact";
 import Work from "./work/work";
 import Thanks from "./contact/thanks";
+import Provider from "../contextapi/context";
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/contact" exact component={Contact} />
-        <Route path="/about" exact component={About} />
-        <Route path="/work" exact component={Work} />
-        <Route path="/thanks" exact component={Thanks} />
-      </Switch>
-    </BrowserRouter>
+    <Provider>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/about" exact component={About} />
+          <Route path="/work" exact component={Work} />
+          <Route path="/thanks" exact component={Thanks} />
+        </Switch>
+      </BrowserRouter>
+    </Provider>
   );
 };
 

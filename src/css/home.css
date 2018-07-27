@@ -223,8 +223,13 @@ a {
 .card-heading {
   text-align: center;
   margin-top: 10%;
-  color: black;
   font-weight: 600;
+
+  background: #1e3267;
+  color: white;
+  padding: 5%;
+  border-radius: 50px;
+  font-size: 1rem;
 }
 
 .card-text {
