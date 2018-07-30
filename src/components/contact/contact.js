@@ -26,13 +26,10 @@ class Contact extends React.Component {
     this.setState({
       [e.target.name]: e.target.value,
       nameEmail: e.target.value
-
     });
   };
 
   onSubmit = e => {
-    
-
     const { name, email, message } = this.state;
 
     if (name === "") {
@@ -41,7 +38,7 @@ class Contact extends React.Component {
           name: "Name is required"
         }
       });
-      e.preventDefault()
+      e.preventDefault();
       return;
     }
 
@@ -51,7 +48,7 @@ class Contact extends React.Component {
           email: "Email address is required"
         }
       });
-      e.preventDefault()
+      e.preventDefault();
       return;
     }
 
@@ -61,13 +58,11 @@ class Contact extends React.Component {
           message: "Message is required"
         }
       });
-      e.preventDefault()
+      e.preventDefault();
       return;
-      
     }
 
     // this.props.history.push("/contact/thanks");
-
   };
 
   render() {
@@ -120,7 +115,6 @@ class Contact extends React.Component {
                     value={email}
                     error={errors.email}
                     onChange={this.onChange}
-                    
                   />
 
                   <input
@@ -131,7 +125,7 @@ class Contact extends React.Component {
                   <input
                     type="hidden"
                     name="_next"
-                    
+                    value="www.mickeyenglish.co.uk/contact/thanks"
                   />
 
                   <div className="d-flex textarea-container">
@@ -155,7 +149,14 @@ class Contact extends React.Component {
                         value={message}
                         onChange={this.onChange}
                       />
-                      {this.state.errors.message && <div style={{color: "red"}} className="invalid-feeback">{this.state.errors.message}</div>}
+                      {this.state.errors.message && (
+                        <div
+                          style={{ color: "red" }}
+                          className="invalid-feeback"
+                        >
+                          {this.state.errors.message}
+                        </div>
+                      )}
                     </Col>
                   </div>
                 </div>

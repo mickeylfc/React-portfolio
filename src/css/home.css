@@ -107,12 +107,6 @@ body {
   font-weight: 700;
 }
 
-.shape {
-  padding: 4em;
-  background: white url("../images/shape.svg") no-repeat bottom right;
-  background-size: 70%;
-}
-
 a {
   color: white;
 }

@@ -4,8 +4,8 @@ import Home from "./home/home";
 import About from "./about/about";
 import Contact from "./contact/contact";
 import Work from "./work/work";
-import Thanks from "./contact/thanks";
-import PageNotFound from "./pageNotFound"
+import Thanks from "./thanks";
+import PageNotFound from "./pageNotFound";
 import Provider from "../contextapi/context";
 
 const Router = () => {
@@ -17,7 +17,7 @@ const Router = () => {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
           <Route exact path="/work" component={Work} />
-          <Route exact path="/contact/thanks" component={Thanks} />
+          <Route exact path="/thanks" component={Thanks} />
           <Route component={PageNotFound} />
         </Switch>
       </BrowserRouter>
