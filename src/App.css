@@ -3,3 +3,8 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+
+.page-not-found {
+  flex-direction: column;
+}

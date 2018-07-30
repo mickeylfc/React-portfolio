@@ -8,7 +8,11 @@ import { Container, Col, Button } from "reactstrap";
 
 class Contact extends React.Component {
   state = {
-    navBorder: ""
+    navBorder: "",
+    name: "",
+    email: "",
+    message: "",
+    errors: {}
   };
 
   componentDidMount() {
@@ -16,7 +20,58 @@ class Contact extends React.Component {
     this.setState({ navBorder: "1px solid white" });
   }
 
+  onChange = e => {
+    // this will get the name of each input
+
+    this.setState({
+      [e.target.name]: e.target.value,
+      nameEmail: e.target.value
+
+    });
+  };
+
+  onSubmit = e => {
+    
+
+    const { name, email, message } = this.state;
+
+    if (name === "") {
+      this.setState({
+        errors: {
+          name: "Name is required"
+        }
+      });
+      e.preventDefault()
+      return;
+    }
+
+    if (email === "") {
+      this.setState({
+        errors: {
+          email: "Email address is required"
+        }
+      });
+      e.preventDefault()
+      return;
+    }
+
+    if (message === "") {
+      this.setState({
+        errors: {
+          message: "Message is required"
+        }
+      });
+      e.preventDefault()
+      return;
+      
+    }
+
+    // this.props.history.push("/contact/thanks");
+
+  };
+
   render() {
+    const { name, email, message, errors } = this.state;
     const userIcon = "far fa-user fa-2x";
     const emailIcon = "fas fa-at fa-2x";
     const messageIcon = "far fa-envelope fa-2x";
@@ -33,7 +88,8 @@ class Contact extends React.Component {
               name="contact"
               action="https://formcarry.com/s/r1z7TIfzX"
               method="POST"
-              accept-charset="UTF-8"
+              acceptCharset="UTF-8"
+              onSubmit={this.onSubmit}
             >
               <div className="box">
                 <Col md="12">
@@ -52,12 +108,19 @@ class Contact extends React.Component {
                     icon={userIcon}
                     placeholder="Full name. . . ."
                     name="name"
+                    value={name}
+                    error={errors.name}
+                    onChange={this.onChange}
                   />
                   <FormInput
                     icon={emailIcon}
                     placeholder="Email address. . . ."
                     type="email"
-                    name="reply_to"
+                    name="email"
+                    value={email}
+                    error={errors.email}
+                    onChange={this.onChange}
+                    
                   />
 
                   <input
@@ -68,7 +131,7 @@ class Contact extends React.Component {
                   <input
                     type="hidden"
                     name="_next"
-                    value="www.mickeyenglish.co.uk/thanks"
+                    
                   />
 
                   <div className="d-flex textarea-container">
@@ -89,7 +152,10 @@ class Contact extends React.Component {
                         style={{ width: "100%" }}
                         placeholder="Write your message here . . ."
                         name="message"
+                        value={message}
+                        onChange={this.onChange}
                       />
+                      {this.state.errors.message && <div style={{color: "red"}} className="invalid-feeback">{this.state.errors.message}</div>}
                     </Col>
                   </div>
                 </div>

@@ -13,7 +13,6 @@ const ServicesSection = () => {
 
         <Consumer>
           {value => {
-            const { image } = value;
             return (
               <Row style={{ paddingTop: "5%", paddingBottom: "10%" }}>
                 {value.images.map((image, index) => {

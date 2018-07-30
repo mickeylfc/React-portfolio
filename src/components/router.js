@@ -5,6 +5,7 @@ import About from "./about/about";
 import Contact from "./contact/contact";
 import Work from "./work/work";
 import Thanks from "./contact/thanks";
+import PageNotFound from "./pageNotFound"
 import Provider from "../contextapi/context";
 
 const Router = () => {
@@ -12,11 +13,12 @@ const Router = () => {
     <Provider>
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/about" exact component={About} />
-          <Route path="/work" exact component={Work} />
-          <Route path="/thanks" exact component={Thanks} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/work" component={Work} />
+          <Route exact path="/contact/thanks" component={Thanks} />
+          <Route component={PageNotFound} />
         </Switch>
       </BrowserRouter>
     </Provider>
