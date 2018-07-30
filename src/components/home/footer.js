@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = props => {
   return (
-    <footer style={{ borderTop: "1px solid white" }}>
+    <footer style={{ background: props.backgroundColor }} className="footer">
       <div className="container">
         <div className="d-flex flex-row ">
           <div

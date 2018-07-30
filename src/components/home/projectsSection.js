@@ -5,17 +5,23 @@ import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
   return (
-    <div>
+    <div
+      style={{
+        paddingBottom: "5%"
+      }}
+    >
       <Container className="p-0">
         <div id="wrapper">
           <div id="header-box">
             <h2 id="recent-projects-heading">Recent Projects</h2>
           </div>
+
           <ProjectBox
             boxName="box1"
             heading="University Final Project"
             url="https://myuel-final-project-v3.herokuapp.com/"
           />
+
           <ProjectBox
             url="http://www.louiseenglishchildminding.co.uk"
             boxName="box2"

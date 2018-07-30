@@ -194,6 +194,7 @@ a {
 
 .services-wrapper {
   padding-top: 5%;
+  background: #fafbfc;
 }
 
 .services-heading {
@@ -203,15 +204,16 @@ a {
 
 .services-sub-heading {
   text-align: center;
-  color: white;
+  color: #536171;
   font-weight: 700;
 }
 
 .card {
   padding: 10%;
-  border-radius: 0;
+  border-radius: 6px;
   /* background-color: transparent; */
   border: none;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.04);
 }
 
 .card-heading {
@@ -411,6 +413,10 @@ a:hover {
   opacity: 1;
   color: black;
   border-bottom: 5px solid rgb(31, 240, 216);
+}
+
+.footer {
+  bordertop: 1px solid white;
 }
 
 .footer-wrapper {

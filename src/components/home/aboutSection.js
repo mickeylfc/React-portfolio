@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container, Button } from "reactstrap";
 import Profile from "../../images/me2.jpg";
+import Fade from "react-reveal/Fade";
 
 const AboutSection = () => {
   return (
@@ -20,12 +21,14 @@ const AboutSection = () => {
           </div>
           <Row>
             <Col className="about-mobile" md="4">
-              <img
-                width="250px"
-                className="img-fluid"
-                src={Profile}
-                alt={Profile}
-              />
+              <Fade>
+                <img
+                  width="250px"
+                  className="img-fluid"
+                  src={Profile}
+                  alt={Profile}
+                />
+              </Fade>
             </Col>
             <Col
               className="about-mobile-text"

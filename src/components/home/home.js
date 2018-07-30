@@ -27,7 +27,7 @@ class Home extends React.Component {
 
         <ProjectsSection />
         <ServicesSection />
-        <Footer />
+        <Footer backgroundColor="#eef2f4" color="#536171" />
       </div>
     );
   }
