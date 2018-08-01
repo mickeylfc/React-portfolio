@@ -23,8 +23,44 @@ body {
 }
 
 .header-wrapper {
-  max-width: 1140px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 60px;
+  grid-gap: 15px;
+
+  grid-template-areas:
+    ". . . . . mac mac mac mac mac mac mac"
+    "heading heading heading heading heading mac mac mac mac mac mac mac"
+    "text text text text text mac mac mac mac mac mac mac "
+    ". . . . . mac mac mac mac mac mac mac"
+    " . . . . . mac mac mac mac mac mac mac"
+    "btn btn btn btn . . . . . . . .";
+}
+
+.intro-heading {
+  grid-area: heading;
+  color: white;
+}
+
+.btn-portfolio {
+  grid-area: btn;
+}
+
+.mac {
+  grid-area: mac;
+}
+
+.intro-text {
+  grid-area: text;
+  color: white;
+}
+
+.typist-header-text {
+  grid-area: typist;
+  grid-column: 6 /13;
+  color: white;
+  grid-row: 2;
+  padding: 2%;
 }
 
 .intro-wrapper {
@@ -68,7 +104,6 @@ body {
 }
 
 .btn-portfolio {
-  width: 50%;
   font-size: 1rem;
   font-weight: 700;
   background-color: white;
@@ -175,6 +210,11 @@ a {
   padding: 10%;
   padding-bottom: 5%;
   padding-top: 5%;
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
 }
 
 .about-section-container {
@@ -476,6 +516,53 @@ a:hover {
     padding: 15px;
   }
 
+  .header-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "mac"
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "heading"
+      "text "
+      "text "
+      "text "
+      "."
+      "btn";
+  }
+
+  .intro-heading {
+    grid-area: heading;
+    color: white;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .btn-portfolio {
+    grid-area: btn;
+  }
+
+  .mac {
+    grid-area: mac;
+    margin: 5%;
+  }
+
+  .intro-text {
+    grid-area: text;
+    color: white;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .typist-header-text {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 10%;
+  }
+
   .intro-wrapper {
     /* padding: 15px; */
     text-align: center;
@@ -615,6 +702,53 @@ a:hover {
     grid-column: 1 / 9;
   }
 
+  .header-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "mac"
+      "."
+      "."
+      "."
+      "."
+      "."
+      "."
+      "heading"
+      "text "
+      "text "
+      "text "
+      "."
+      "btn";
+  }
+
+  .intro-heading {
+    grid-area: heading;
+    color: white;
+
+    text-align: center;
+  }
+
+  .btn-portfolio {
+    grid-area: btn;
+    grid-row: 12;
+  }
+
+  .mac {
+    grid-area: mac;
+  }
+
+  .intro-text {
+    grid-area: text;
+    color: white;
+
+    text-align: center;
+  }
+
+  .typist-header-text {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 10%;
+  }
+
   #freelance {
     padding-top: 20%;
     text-align: center;
@@ -683,6 +817,47 @@ a:hover {
       "text text text text text text"
       ". . . . . ."
       "button button button more-button more-button more-button";
+  }
+
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 60px;
+    grid-gap: 15px;
+
+    grid-template-areas:
+      ". . . . . mac mac mac mac mac mac mac"
+      "heading heading heading heading heading mac mac mac mac mac mac mac"
+      "text text text text text mac mac mac mac mac mac mac "
+      ". . . . . mac mac mac mac mac mac mac"
+      " . . . . . mac mac mac mac mac mac mac"
+      ". . . . . . . . . . . ."
+      "btn btn btn btn . . . . . . . .";
+  }
+
+  .intro-heading {
+    grid-area: heading;
+    color: white;
+    grid-row: 1;
+  }
+
+  .btn-portfolio {
+    grid-area: btn;
+    grid-row: 6;
+  }
+
+  .mac {
+    grid-area: mac;
+  }
+
+  .intro-text {
+    grid-area: text;
+    color: white;
+    grid-row: 2;
+  }
+
+  .typist-header-text {
+    padding: 4%;
   }
 
   #freelance {

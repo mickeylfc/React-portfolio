@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Col, Row, Container, Button } from "reactstrap";
+import { Col, Row, Button } from "reactstrap";
 import Profile from "../../images/me2.jpg";
 import Fade from "react-reveal/Fade";
 import Icons from "./icons";
