@@ -42,7 +42,7 @@ body {
   color: white;
 }
 
-.btn-portfolio {
+.portfolio-btn {
   grid-area: btn;
 }
 
@@ -109,7 +109,7 @@ body {
   background-color: white;
   border: none;
   color: black;
-  padding: 2%;
+  padding: 5%;
 }
 
 .btn-portfolio:hover {
@@ -534,6 +534,10 @@ a:hover {
       "btn";
   }
 
+  .portfolio-btn {
+    justify-self: center;
+  }
+
   .intro-heading {
     grid-area: heading;
     color: white;
@@ -543,6 +547,7 @@ a:hover {
 
   .btn-portfolio {
     grid-area: btn;
+    padding: 10%;
   }
 
   .mac {
@@ -696,6 +701,14 @@ a:hover {
       "box2"
       "box3"
       "more";
+  }
+
+  .portfolio-btn {
+    justify-self: center;
+  }
+
+  .btn-portfolio {
+    padding: 10%;
   }
 
   .header-image {

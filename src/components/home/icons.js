@@ -12,42 +12,42 @@ const Icons = () => {
           <div className="col">
             <i
               style={{ color: "#D55732" }}
-              className="fab fa-html5 fa-3x img-fluid"
+              className="fab fa-html5 fa-3x icon-img"
             />
           </div>
           <div className="col">
             <i
               style={{ color: "#2C6EB9" }}
-              className="fab fa-css3-alt fa-3x img-fluid"
+              className="fab fa-css3-alt fa-3x icon-img"
             />
           </div>
           <div className="col">
             <i
               style={{ color: "#C36A98" }}
-              className="fab fa-sass fa-3x img-fluid"
+              className="fab fa-sass fa-3x icon-img"
             />
           </div>
           <div className="col">
             <i
               style={{ color: "#F2DF4F" }}
-              className="fab fa-js-square fa-3x img-fluid"
+              className="fab fa-js-square fa-3x icon-img"
             />
           </div>
           <div className="col">
             <i
               style={{ color: "#80D8F7" }}
-              className="fab fa-react fa-3x img-fluid"
+              className="fab fa-react fa-3x icon-img"
             />
           </div>
           <div className="col">
             <i
               style={{ color: "#62B587" }}
-              className="fab fa-vuejs fa-3x img-fluid"
+              className="fab fa-vuejs fa-3x icon-img"
             />
           </div>
           <div className="col">
             <svg
-              className="img-fluid"
+              className="icon-img"
               style={{ height: "2.5em" }}
               viewBox="0 0 128 128"
             >
@@ -59,7 +59,7 @@ const Icons = () => {
           </div>
           <div className="col">
             <svg
-              className="img-fluid"
+              className="icon-img"
               style={{ height: "2.5em" }}
               viewBox="0 0 128 128"
             >
@@ -73,7 +73,7 @@ const Icons = () => {
           </div>
           <div className="col">
             <svg
-              className="img-fluid"
+              className="icon-img"
               style={{ height: "2.5em" }}
               viewBox="0 0 128 128"
             >
@@ -92,7 +92,7 @@ const Icons = () => {
           </div>
           <div className="col">
             <svg
-              className="img-fluid"
+              className="icon-img"
               style={{ height: "2.5em" }}
               viewBox="0 0 128 128"
             >
