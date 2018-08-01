@@ -8,7 +8,7 @@ const ServicesSection = () => {
     <div className="services-wrapper">
       <Container>
         <Col md="12">
-          <h2 className="services-sub-heading">What I can offer you</h2>
+          <h2 className="services-sub-heading">Services I can offer you</h2>
         </Col>
 
         <Consumer>

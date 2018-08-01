@@ -29,9 +29,9 @@ class CustomNavbar extends React.Component {
   }
   render() {
     return (
-      <Container>
+      <Container className="p-0">
         <Navbar style={{ background: "transparent" }} light expand="md">
-          <NavLink tag={Link} to="/">
+          <NavLink className="p-0" tag={Link} to="/">
             <div
               style={{
                 color: this.props.color
@@ -78,7 +78,7 @@ class CustomNavbar extends React.Component {
                   active
                   tag={Link}
                   to="/work"
-                  style={{ color: this.props.color }}
+                  style={{ color: this.props.color, paddingRight: "0" }}
                 >
                   Work
                 </NavLink>
