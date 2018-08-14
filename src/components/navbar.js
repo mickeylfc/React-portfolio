@@ -44,6 +44,17 @@ class CustomNavbar extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+              <UncontrolledDropdown nav inNavbar>
+                <NavLink
+                  className={this.props.workNavBorder}
+                  active
+                  tag={Link}
+                  to="/work"
+                  style={{ color: this.props.color }}
+                >
+                  Work
+                </NavLink>
+              </UncontrolledDropdown>
               <NavItem>
                 <NavLink
                   className={this.props.aboutNavBorder}
@@ -72,17 +83,6 @@ class CustomNavbar extends React.Component {
                   Contact
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <NavLink
-                  className={this.props.workNavBorder}
-                  active
-                  tag={Link}
-                  to="/work"
-                  style={{ color: this.props.color, paddingRight: "0" }}
-                >
-                  Work
-                </NavLink>
-              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Navbar>

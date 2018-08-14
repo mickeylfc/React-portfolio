@@ -124,6 +124,7 @@ class Work extends React.Component {
                   projectDate="June 2017"
                   ProjectTech="HTML, SASS, Ruby on Rails, Heroku, AWS"
                   url="http://www.techworldlifestyle.com"
+                  github=""
                 />
 
                 <Boxes
@@ -173,6 +174,7 @@ class Work extends React.Component {
                   login="To login as a guest, use the following"
                   username="Username = u1438760@uel.ac.uk"
                   password="Password = password"
+                  github="https://github.com/mickeylfc/final_project_v2"
                 />
                 <Boxes
                   isOpen={this.state.modal3}
@@ -191,9 +193,12 @@ class Work extends React.Component {
                   feature1="React"
                   feature2="JSON"
                   feature3="Webpack"
+                  feauture4="Contact form text message alerts with Twillio"
                   projectName="Personal Portfolio"
                   projectDate="June 2018"
-                  projectTech="JavaScript, React, Webpack, NPM, PostgreSQL"
+                  projectTech="JavaScript, React, Webpack, NPM, PostgreSQL, React ContextAPI"
+                  github="https://github.com/mickeylfc/React-portfolio/tree/master"
+
                 />
                 <Boxes
                   toggleModal={this.toggleModal4}
@@ -238,6 +243,7 @@ class Work extends React.Component {
                   login="To login as a guest, use the following"
                   username="Username = guest"
                   password="Password = password"
+                  github=""
                 />
                 <Boxes
                   toggleModal={this.toggleModal6}

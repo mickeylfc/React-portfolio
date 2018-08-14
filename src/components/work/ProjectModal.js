@@ -66,6 +66,12 @@ const ProjectModal = props => {
                 </Button>
               </a>
 
+              <a href={props.github} target="_blank">
+                <Button className="visit-site-button" color="primary">
+                  Github
+                </Button>
+              </a>
+
               <Button
                 className="cancel-site-button"
                 color="secondary"

@@ -14,7 +14,7 @@ const Header = () => {
           some fun projects to work on. I have a strong passion for web
           development mainly with Ruby on Rails for the back-end and React for
           the front-end. I recently gained a first-class degree and I am now
-          actively looking for junior developer oppertunities.{" "}
+          actively looking for junior developer opportunities.{" "}
         </p>
         <Link className="portfolio-btn" to="/work">
           <button className="btn btn-portfolio">PORTFOLIO</button>
