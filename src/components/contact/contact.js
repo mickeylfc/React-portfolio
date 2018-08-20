@@ -19,9 +19,10 @@ class Contact extends React.Component {
   };
 
   componentDidMount() {
+    document.body.style.background = this.state.bg; // Set the style
     this.setState({ navBorder: "1px solid white" });
   }
-
+ 
 
 
   onChange = e => {
@@ -76,7 +77,6 @@ class Contact extends React.Component {
     const messageIcon = "far fa-envelope fa-2x";
 
     return (
-      <BodyBackgroundColor backgroundColor={this.state.bg}>
       <div>
         <CustomNavbar color="white" borderDark={this.state.navBorder} />
         <div className="about-wrapper">
@@ -181,7 +181,6 @@ class Contact extends React.Component {
         <br />
         <Footer />
       </div>
-      </BodyBackgroundColor>
     );
   }
 }

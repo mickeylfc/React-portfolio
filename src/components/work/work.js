@@ -87,6 +87,7 @@ class Work extends React.Component {
   }
 
   componentDidMount() {
+    document.body.style.background = this.state.bg; // Set the style
     this.setState({ navBorder: "nav-border-bottom" });
     
   }
@@ -94,7 +95,6 @@ class Work extends React.Component {
 
   render() {
     return (
-      <BodyBackgroundColor backgroundColor={this.state.bg}>
       <div>
         <CustomNavbar color="black" workNavBorder={this.state.navBorder} />
         <Header heading="Projects" color="black" />
@@ -334,7 +334,6 @@ class Work extends React.Component {
         <br />
         <Footer color="black" />
       </div>
-      </BodyBackgroundColor>
     );
   }
 }

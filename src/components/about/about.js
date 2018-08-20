@@ -15,6 +15,7 @@ class About extends React.Component {
   };
 
   componentDidMount() {
+    document.body.style.background = this.state.bg; // Set the style
     this.setState({ navBorder: "nav-border-bottom" });
   }
 
@@ -24,7 +25,6 @@ class About extends React.Component {
 
 
     return (
-      <BodyBackgroundColor backgroundColor={this.state.bg}>
         <div>
           <CustomNavbar color="white" aboutNavBorder={this.state.navBorder} />
           <Header heading="About" color="white" />
@@ -40,7 +40,6 @@ class About extends React.Component {
           <br />
           <Footer />
         </div>
-      </BodyBackgroundColor>
     );
   }
 }
