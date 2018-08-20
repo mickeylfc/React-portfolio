@@ -5,7 +5,6 @@ import Header from "../header";
 import FormInput from "./input";
 import Footer from "../home/footer";
 import { Container, Col, Button } from "reactstrap";
-import BodyBackgroundColor from "react-body-backgroundcolor";
 
 
 class Contact extends React.Component {

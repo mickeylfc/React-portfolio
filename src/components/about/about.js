@@ -6,7 +6,6 @@ import RightSide from "./rightSide";
 import LeftSide from "./leftSide";
 import Header from "../header";
 import { Container, Row } from "reactstrap";
-import BodyBackgroundColor from "react-body-backgroundcolor";
 
 class About extends React.Component {
   state = {
