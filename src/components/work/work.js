@@ -11,7 +11,7 @@ import Graphic from "../../images/graphicSmall.png";
 import Internship from "../../images/itservicesSmall.png";
 import ProjectModal from "./ProjectModal";
 import ProjectTabs from "./projectTabs";
-import BodyBackgroundColor from "react-body-backgroundcolor"
+import BodyBackgroundColor from "react-body-backgroundcolor";
 
 
 import { Container, Row, TabContent, TabPane } from "reactstrap";
