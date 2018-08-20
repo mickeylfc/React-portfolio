@@ -5,6 +5,8 @@ import Header from "../header";
 import FormInput from "./input";
 import Footer from "../home/footer";
 import { Container, Col, Button } from "reactstrap";
+import BodyBackgroundColor from "react-body-backgroundcolor"
+
 
 class Contact extends React.Component {
   state = {
@@ -12,13 +14,15 @@ class Contact extends React.Component {
     name: "",
     email: "",
     message: "",
-    errors: {}
+    errors: {},
+    bg: "#00CEC9"
   };
 
   componentDidMount() {
-    document.body.style.background = "#00CEC9"; // Set the style
     this.setState({ navBorder: "1px solid white" });
   }
+
+
 
   onChange = e => {
     // this will get the name of each input
@@ -72,10 +76,11 @@ class Contact extends React.Component {
     const messageIcon = "far fa-envelope fa-2x";
 
     return (
+      <BodyBackgroundColor backgroundColor={this.state.bg}>
       <div>
         <CustomNavbar color="white" borderDark={this.state.navBorder} />
         <div className="about-wrapper">
-          <Container>
+          <Container className="p-0">
             <Header color="white" heading="Contact Me" />
 
             <form
@@ -176,6 +181,7 @@ class Contact extends React.Component {
         <br />
         <Footer />
       </div>
+      </BodyBackgroundColor>
     );
   }
 }

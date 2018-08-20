@@ -1,12 +1,12 @@
 import React from "react";
 import ServiceBox from "./serviceBox";
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import { Consumer } from "../../contextapi/context";
 
 const ServicesSection = () => {
   return (
     <div className="services-wrapper">
-      <Container>
+      <div className="container p-0">
         <Col md="12">
           <h2 className="services-sub-heading">Services I can offer you</h2>
         </Col>
@@ -26,7 +26,7 @@ const ServicesSection = () => {
             );
           }}
         </Consumer>
-      </Container>
+      </div>
     </div>
   );
 };

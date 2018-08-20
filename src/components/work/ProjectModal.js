@@ -23,6 +23,7 @@ const ProjectModal = props => {
             toggle={props.toggleModal}
             className={props.className}
           >
+            <img style={{ margin: "-16px" }} height="220" src={props.modalImage} alt={props.alt} />
             <ModalHeader toggle={props.toggleModal}>{props.title}</ModalHeader>
 
             <div className="d-flex modal-sub-heading">

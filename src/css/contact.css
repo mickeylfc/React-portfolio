@@ -12,6 +12,8 @@
   background: white;
   height: 100%;
   flex-direction: column;
+  padding-bottom: 5%;
+  padding-top: 0;
 }
 
 .header-text {
@@ -19,6 +21,8 @@
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
+  padding-top: 5%;
+  text-align: center;
 }
 
 .nav-border-bottom-black {

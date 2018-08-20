@@ -50,7 +50,7 @@ class CustomNavbar extends React.Component {
                   active
                   tag={Link}
                   to="/work"
-                  style={{ color: this.props.color }}
+                  style={{ color: this.props.color, paddingRight: 0 }}
                 >
                   Work
                 </NavLink>
@@ -63,7 +63,8 @@ class CustomNavbar extends React.Component {
                   to="/about"
                   style={{
                     color: this.props.color,
-                    borderBottom: this.props.border
+                    borderBottom: this.props.border,
+                    paddingRight: 0
                   }}
                 >
                   About
@@ -77,7 +78,8 @@ class CustomNavbar extends React.Component {
                   to="/contact"
                   style={{
                     color: this.props.color,
-                    borderBottom: this.props.borderDark
+                    borderBottom: this.props.borderDark,
+                    paddingRight: 0
                   }}
                 >
                   Contact

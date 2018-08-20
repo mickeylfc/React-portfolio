@@ -1,7 +1,5 @@
 import React from "react";
-import { Container } from "reactstrap";
 import ProjectBox from "./projectBox";
-import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
   return (
@@ -10,7 +8,7 @@ const ProjectsSection = () => {
         paddingBottom: "5%"
       }}
     >
-      <Container className="p-0">
+      <div className="container p-0">
         <div id="wrapper">
           <div id="header-box">
             <h2 id="recent-projects-heading">Recent Projects</h2>
@@ -32,13 +30,8 @@ const ProjectsSection = () => {
             heading="Technology Blog"
             url="http://www.techworldlifestyle.com"
           />
-          <div id="view-more">
-            <Link to="/work">
-              <h2 id="view-more-text">View more </h2>
-            </Link>
-          </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

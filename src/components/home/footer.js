@@ -3,7 +3,7 @@ import React from "react";
 const Footer = props => {
   return (
     <footer style={{ background: props.backgroundColor }} className="footer">
-      <div className="container">
+      <div className="container p-0">
         <div className="d-flex flex-row ">
           <div
             style={{ textAlign: "center", color: props.color }}

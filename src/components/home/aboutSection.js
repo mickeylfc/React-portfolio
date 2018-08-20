@@ -10,17 +10,17 @@ const AboutSection = () => {
     <div>
       <div className="about-section-wrapper">
         <div className="about-inner-box">
-          <div className="about-heading-wrapper">
-            <Row>
-              <h2
-                style={{ textAlign: "center" }}
-                className="mx-auto about-heading"
-              >
-                A little bit about me
+          <div className="container p-0">
+            <div className="about-heading-wrapper">
+              <Row>
+                <h2
+                  style={{ textAlign: "center" }}
+                  className="mx-auto about-heading"
+                >
+                  A little bit about me
               </h2>
-            </Row>
-          </div>
-          <Row>
+              </Row>
+            </div>
             <div className="about-section-container">
               <Col className="about-mobile" md="4">
                 <Fade>
@@ -56,7 +56,7 @@ const AboutSection = () => {
               </Col>
             </div>
             <Icons />
-          </Row>
+          </div>
         </div>
       </div>
     </div>

@@ -11,6 +11,8 @@ import Graphic from "../../images/graphicSmall.png";
 import Internship from "../../images/itservicesSmall.png";
 import ProjectModal from "./ProjectModal";
 import ProjectTabs from "./projectTabs";
+import BodyBackgroundColor from "react-body-backgroundcolor"
+
 
 import { Container, Row, TabContent, TabPane } from "reactstrap";
 import Header from "../header";
@@ -35,7 +37,8 @@ class Work extends React.Component {
       uni: Uni,
       portfolio: Portfolio,
       graphic: Graphic,
-      internship: Internship
+      internship: Internship,
+      bg: "#F7F1E3"
     };
   }
 
@@ -84,12 +87,14 @@ class Work extends React.Component {
   }
 
   componentDidMount() {
-    document.body.style.background = "#F7F1E3";
     this.setState({ navBorder: "nav-border-bottom" });
+    
   }
+
 
   render() {
     return (
+      <BodyBackgroundColor backgroundColor={this.state.bg}>
       <div>
         <CustomNavbar color="black" workNavBorder={this.state.navBorder} />
         <Header heading="Projects" color="black" />
@@ -125,6 +130,8 @@ class Work extends React.Component {
                   ProjectTech="HTML, SASS, Ruby on Rails, Heroku, AWS"
                   url="http://www.techworldlifestyle.com"
                   github=""
+                  modalImage="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1046925db0fb1f15417d71ad1676880&auto=format&fit=crop&w=1950&q=80"
+                  alt="TechworldLifestyle"
                 />
 
                 <Boxes
@@ -147,6 +154,8 @@ class Work extends React.Component {
                   projectDate="December 2016"
                   projectTech="HTML, CSS, Ruby on Rails"
                   url="http://www.louiseenglishchildminding.co.uk/"
+                  modalImage="https://images.unsplash.com/photo-1526455365195-86c9d2fd3ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=360b1ef63613cff85f354daeb68716d5&auto=format&fit=crop&w=1950&q=80"
+                  alt="Louise English Childminding"
                 />
                 <Boxes
                   toggleModal={this.toggleModal2}
@@ -175,6 +184,8 @@ class Work extends React.Component {
                   username="Username = u1438760@uel.ac.uk"
                   password="Password = password"
                   github="https://github.com/mickeylfc/final_project_v2"
+                  modalImage="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3aef6d10744dd7cbc836b631f46c1e5e&auto=format&fit=crop&w=1950&q=80"
+                  aly="University Final Project"
                 />
                 <Boxes
                   isOpen={this.state.modal3}
@@ -198,6 +209,8 @@ class Work extends React.Component {
                   projectDate="June 2018"
                   projectTech="JavaScript, React, Webpack, NPM, PostgreSQL, React ContextAPI"
                   github="https://github.com/mickeylfc/React-portfolio/tree/master"
+                  modalImage="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="Portfolio"
 
                 />
                 <Boxes
@@ -217,6 +230,8 @@ class Work extends React.Component {
                   projectDate="October 2015"
                   projectTech="HTML, CSS, PHP"
                   url="https://jamiehaworth.herokuapp.com/"
+                  modalImage="https://images.pexels.com/photos/316465/pexels-photo-316465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="Clients Graphic Design Portfolio"
                 />
 
                 <Boxes
@@ -244,6 +259,8 @@ class Work extends React.Component {
                   username="Username = guest"
                   password="Password = password"
                   github=""
+                  modalImage="https://images.unsplash.com/photo-1521798639664-03c920e53085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9c9878777ab9fb4a8346fd51f7858dc&auto=format&fit=crop&w=1950&q=80"
+                  alt="Internship Team Project"
                 />
                 <Boxes
                   toggleModal={this.toggleModal6}
@@ -317,6 +334,7 @@ class Work extends React.Component {
         <br />
         <Footer color="black" />
       </div>
+      </BodyBackgroundColor>
     );
   }
 }
