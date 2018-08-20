@@ -50,9 +50,9 @@ class CustomNavbar extends React.Component {
                   active
                   tag={Link}
                   to="/work"
-                  style={{ color: this.props.color, paddingRight: 0 }}
+                  style={{ color: this.props.color, paddingRight: 0, marginRight: "40px" }}
                 >
-                  Work
+                  Projects
                 </NavLink>
               </UncontrolledDropdown>
               <NavItem>
@@ -64,7 +64,8 @@ class CustomNavbar extends React.Component {
                   style={{
                     color: this.props.color,
                     borderBottom: this.props.border,
-                    paddingRight: 0
+                    paddingRight: 0,
+                    marginRight: "40px"
                   }}
                 >
                   About

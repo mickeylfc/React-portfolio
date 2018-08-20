@@ -21,12 +21,13 @@
   flex-direction: column;
   margin-bottom: 5px;
   transition: transform 0.3s; /* Animation */
+  /* z-index: 0; */
 }
 
-.project-box:hover {
+/* .project-box:hover {
   transform: scale(1.04);
   z-index: 1;
-}
+} */
 
 .project-box-text {
   color: white;
@@ -109,4 +110,11 @@
   .project-box-text {
     font-size: 1.4rem;
   }
+
+  .col-no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  
 }

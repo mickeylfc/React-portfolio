@@ -1,6 +1,5 @@
 import React from "react";
 import { Col } from "reactstrap";
-
 import Fade from "react-reveal/Fade";
 
 const Boxes = props => {
