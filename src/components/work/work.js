@@ -119,22 +119,18 @@ class Work extends React.Component {
                   isOpen={this.state.modal7}
                   toggleModal={this.toggleModal7}
                   body={
-                    "I worked as an intern at UEL IT Services for three months where I worked with a team of three developers including myself, and a project manager. We were asked to develop a platform to help the IT services staff access information about all the different service the UEL IT services manage. We developed the application in PHP with a MySQL database. This project taught me how to work better in teams and gave me an understanding of a working environment as a developer. Also, the position, hugely improved my management skills by organizing and prioritising workloads to meet deadlines and to work better under pressure."
+                    "During the covid-19 global pandemic I was interested in converting the data into a friendly format and create an easier accessible application for anyone to view. I found the NOVEL COVID API which gets the data from the Johns Hopkins University. I decided to not use a framework and my goal was to improve my Vanilla JavaScript skills. "
                   }
-                  title={"Internship Team Project"}
-                  feature1="CRUD"
-                  feature2="Secure Login"
-                  feature3="Admin Panel and User Permissions"
-                  feature4="Relational databases"
-                  projectName="UEL IT Services Internship Project"
-                  projectDate="April-June 2017"
-                  projectTech="HTML, CSS, JavaScript, PHP, MySQL,"
-                  url="https://uel-it-services.herokuapp.com/"
-                  login="To login as a guest, use the following"
-                  username="Username = guest"
-                  password="Password = password"
-                  github=""
-                  modalImage="https://images.unsplash.com/photo-1521798639664-03c920e53085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9c9878777ab9fb4a8346fd51f7858dc&auto=format&fit=crop&w=1950&q=80"
+                  title={"Coronavirus - COVID-19 Dashboard"}
+                  feature2="Data fetched from a 3rd party API Service"
+                  feature3= "https://disease.sh/"
+                  feature4="Dark Mode 😎"
+                  projectName="Coronavirus - COVID-19 Dashboard"
+                  projectDate="May 2020"
+                  projectTech="HTML, CSS, JavaScript"
+                  url="https://coronavirus-covid19-stats.herokuapp.com/"
+                  github="https://github.com/mickeyeng/coronavirus-dashboard"
+                  modalImage="https://images.unsplash.com/photo-1586344772729-eb0bfc7733d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2853&q=80"
                   alt="Internship Team Project"
                   />
                 <Boxes
