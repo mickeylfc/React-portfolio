@@ -8,30 +8,30 @@ const ProjectTabs = props => {
       <Nav className="custom-nav-tabs" tabs>
         <NavItem>
           <NavLink
-            className={classnames({ active: props.activeTab === "0" })}
+            className={classnames({ active: props.activeTab === "all" })}
             onClick={() => {
-              props.toggle("0");
+              props.toggle("all");
             }}
           >
-            Projects
+            All Projects
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: props.activeTab === "1" })}
+            className={classnames({ active: props.activeTab === "javascript" })}
             onClick={() => {
-              props.toggle("1");
+              props.toggle("javascript");
             }}
           >
-            Ruby On Rails
+            JavaScript
           </NavLink>
         </NavItem>
 
         <NavItem>
           <NavLink
-            className={classnames({ active: props.activeTab === "2" })}
+            className={classnames({ active: props.activeTab === "react" })}
             onClick={() => {
-              props.toggle("2");
+              props.toggle("react");
             }}
           >
             React
@@ -40,14 +40,29 @@ const ProjectTabs = props => {
 
         <NavItem>
           <NavLink
-            className={classnames({ active: props.activeTab === "3" })}
+            className={classnames({ active: props.activeTab === "ruby" })}
             onClick={() => {
-              props.toggle("3");
+              props.toggle("ruby");
+            }}
+          >
+            Ruby On Rails
+          </NavLink>
+        </NavItem>
+
+       
+
+        <NavItem>
+          <NavLink
+            className={classnames({ active: props.activeTab === "php" })}
+            onClick={() => {
+              props.toggle("php");
             }}
           >
             PHP
           </NavLink>
         </NavItem>
+
+       
       </Nav>
     </div>
   );

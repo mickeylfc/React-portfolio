@@ -9,6 +9,7 @@ import Uni from "../../images/uniSmall.png";
 import Portfolio from "../../images/portfolioSmall.png";
 import Graphic from "../../images/graphicSmall.png";
 import Internship from "../../images/itservicesSmall.png";
+import Covid from "../../images/covid.png";
 import ProjectModal from "./ProjectModal";
 import ProjectTabs from "./projectTabs";
 
@@ -24,24 +25,26 @@ class Work extends React.Component {
 
     this.state = {
       navBorder: "",
-      activeTab: "0",
+      activeTab: "all",
       modal: false,
       modal2: false,
       modal3: false,
       modal4: false,
       modal5: false,
       modal6: false,
+      modal7: false,
       techworld: Techworld,
       child: Child,
       uni: Uni,
       portfolio: Portfolio,
       graphic: Graphic,
       internship: Internship,
+      personal: Covid,
       bg: "#F7F1E3"
     };
   }
 
-  toggleModal1 = index => {
+  toggleModal1 = () => {
     this.setState({
       modal: !this.state.modal
     });
@@ -77,6 +80,12 @@ class Work extends React.Component {
     });
   };
 
+  toggleModal7 = () => {
+    this.setState({
+      modal7: !this.state.modal7
+    });
+  };
+
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -88,7 +97,6 @@ class Work extends React.Component {
   componentDidMount() {
     document.body.style.background = this.state.bg; // Set the style
     this.setState({ navBorder: "nav-border-bottom" });
-    
   }
 
   render() {
@@ -104,9 +112,38 @@ class Work extends React.Component {
         <ProjectTabs activeTab={this.state.activeTab} toggle={this.toggle} />
 
         <TabContent activeTab={this.state.activeTab}>
-          <TabPane tabId="0">
+          <TabPane tabId="all">
             <Container>
               <Row>
+              <ProjectModal
+                  isOpen={this.state.modal7}
+                  toggleModal={this.toggleModal7}
+                  body={
+                    "I worked as an intern at UEL IT Services for three months where I worked with a team of three developers including myself, and a project manager. We were asked to develop a platform to help the IT services staff access information about all the different service the UEL IT services manage. We developed the application in PHP with a MySQL database. This project taught me how to work better in teams and gave me an understanding of a working environment as a developer. Also, the position, hugely improved my management skills by organizing and prioritising workloads to meet deadlines and to work better under pressure."
+                  }
+                  title={"Internship Team Project"}
+                  feature1="CRUD"
+                  feature2="Secure Login"
+                  feature3="Admin Panel and User Permissions"
+                  feature4="Relational databases"
+                  projectName="UEL IT Services Internship Project"
+                  projectDate="April-June 2017"
+                  projectTech="HTML, CSS, JavaScript, PHP, MySQL,"
+                  url="https://uel-it-services.herokuapp.com/"
+                  login="To login as a guest, use the following"
+                  username="Username = guest"
+                  password="Password = password"
+                  github=""
+                  modalImage="https://images.unsplash.com/photo-1521798639664-03c920e53085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9c9878777ab9fb4a8346fd51f7858dc&auto=format&fit=crop&w=1950&q=80"
+                  alt="Internship Team Project"
+                  />
+                <Boxes
+                  toggleModal={this.toggleModal7}
+                  nameLineOne="COVID-19 DASHBOARD"
+                  nameLineTwo="PERSONAL"
+                  image={Covid}
+                />
+
                 <ProjectModal
                   isOpen={this.state.modal}
                   toggleModal={this.toggleModal1}
@@ -270,7 +307,33 @@ class Work extends React.Component {
             </Container>
           </TabPane>
 
-          <TabPane tabId="1">
+          <TabPane tabId="javascript">
+            <Container>
+              <Row>
+              <Boxes
+                  nameLineOne="COVID-19 DASHBOARD"
+                  nameLineTwo="PERSONAL"
+                  image={Covid}
+                  toggleModal={this.toggleModal7}
+                />
+              </Row>
+            </Container>
+          </TabPane>
+
+          <TabPane tabId="react">
+            <Container>
+              <Row>
+                <Boxes
+                  nameLineOne="PORTFOLIO"
+                  nameLineTwo=""
+                  image={Portfolio}
+                  toggleModal={this.toggleModal4}
+                />
+              </Row>
+            </Container>
+          </TabPane>
+
+          <TabPane tabId="ruby">
             <Container>
               <Row>
                 <Boxes
@@ -294,19 +357,8 @@ class Work extends React.Component {
               </Row>
             </Container>
           </TabPane>
-          <TabPane tabId="2">
-            <Container>
-              <Row>
-                <Boxes
-                  nameLineOne="PORTFOLIO"
-                  nameLineTwo=""
-                  image={Portfolio}
-                  toggleModal={this.toggleModal4}
-                />
-              </Row>
-            </Container>
-          </TabPane>
-          <TabPane tabId="3">
+        
+          <TabPane tabId="php">
             <Container>
               <Row>
                 <Boxes
@@ -324,6 +376,8 @@ class Work extends React.Component {
               </Row>
             </Container>
           </TabPane>
+
+
         </TabContent>
 
         <br />
