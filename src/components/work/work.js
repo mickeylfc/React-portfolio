@@ -10,6 +10,7 @@ import Portfolio from "../../images/portfolioSmall.png";
 import Graphic from "../../images/graphicSmall.png";
 import Internship from "../../images/itservicesSmall.png";
 import Covid from "../../images/covid.png";
+import Weather from "../../images/weather.jpeg";
 import ProjectModal from "./ProjectModal";
 import ProjectTabs from "./projectTabs";
 
@@ -40,6 +41,7 @@ class Work extends React.Component {
       graphic: Graphic,
       internship: Internship,
       personal: Covid,
+      weather: Weather,
       bg: "#F7F1E3"
     };
   }
@@ -85,6 +87,13 @@ class Work extends React.Component {
       modal7: !this.state.modal7
     });
   };
+
+  toggleModal8 = () => {
+    this.setState({
+      modal8: !this.state.modal8
+    });
+  };
+
 
   toggle(tab) {
     if (this.state.activeTab !== tab) {
@@ -156,7 +165,7 @@ class Work extends React.Component {
                   feature4="Create tags for each blog post
                   "
                   projectName="Techworld Lifestyle"
-                  projectDate="June 2017"
+                  projectDate="June 2018"
                   ProjectTech="HTML, SASS, Ruby on Rails, Heroku, AWS"
                   url="https://techworlduk.herokuapp.com/"
                   github=""
@@ -171,29 +180,30 @@ class Work extends React.Component {
                   image={this.state.techworld}
                   number={1}
                 />
-
-                <ProjectModal
-                  isOpen={this.state.modal2}
-                  toggleModal={this.toggleModal2}
+                
+                {/* <ProjectModal
+                  isOpen={this.state.modal8}
+                  toggleModal={this.toggleModal8}
                   body={
-                    "I was asked to create a website for one of my family members who runs a childminding business. The client had some requirements I had to follow which was to allow them to update a child vacancies section on the home page, as well as a feature where the user could add new pictures to a gallery. I designed the project using Photoshop and Adobe XD.  My main goal was to make the appearance look child-friendly which I believe I accomplished. Besides tutorials, this was one of the first Ruby and Rails web applications I created."
+                    "A weather forecast dashboard which displays the weather forecast after the user enters a location in the search box. The application use the Google autocomplete API, leaflet.js library and the Unsplash Api"
                   }
-                  title={"A website for a childminding business"}
-                  feature1="CRUD (Create, Read, Update, Delete)"
-                  projectName="Louise's Childminding"
-                  projectDate="December 2016"
-                  projectTech="HTML, CSS, Ruby on Rails"
+                  title={"Weather Forecast Dashboard"}
+                  feature1="Leaflet.js,"
+                  feature2="Unsplash Api"
+                  feature3="Google auto complete"
+                  projectName="Weather Forecast Dashboard"
+                  projectDate="February 2020"
+                  projectTech="JavaScript"
                   url="https://mam-web-new.herokuapp.com/"
-                  modalImage="https://images.unsplash.com/photo-1526455365195-86c9d2fd3ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=360b1ef63613cff85f354daeb68716d5&auto=format&fit=crop&w=1950&q=80"
-                  alt="Louise English Childminding"
+                  modalImage="https://images.unsplash.com/photo-1558486012-817176f84c6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=919&q=80"
+                  alt="Weather Forecast Dashboard"
                 />
                 <Boxes
-                  toggleModal={this.toggleModal2}
-                  nameLineOne="CHILDMINDING"
-                  nameLineTwo="BUSINESS"
-                  image={this.state.child}
-                  number={2}
-                />
+                  toggleModal={this.toggleModal8}
+                  nameLineOne="WEATHER FORECAST DASHBOARD"
+                  image={Weather}
+                /> */}
+
                 <ProjectModal
                   isOpen={this.state.modal3}
                   toggleModal={this.toggleModal3}
@@ -224,6 +234,31 @@ class Work extends React.Component {
                   nameLineTwo="YEAR PROJECT"
                   image={this.state.uni}
                 />
+
+
+                <ProjectModal
+                  isOpen={this.state.modal2}
+                  toggleModal={this.toggleModal2}
+                  body={
+                    "I was asked to create a website for one of my family members who runs a childminding business. The client had some requirements I had to follow which was to allow them to update a child vacancies section on the home page, as well as a feature where the user could add new pictures to a gallery. I designed the project using Photoshop and Adobe XD.  My main goal was to make the appearance look child-friendly which I believe I accomplished. Besides tutorials, this was one of the first Ruby and Rails web applications I created."
+                  }
+                  title={"A website for a childminding business"}
+                  feature1="CRUD (Create, Read, Update, Delete)"
+                  projectName="Louise's Childminding"
+                  projectDate="December 2016"
+                  projectTech="HTML, CSS, Ruby on Rails"
+                  url="https://mam-web-new.herokuapp.com/"
+                  modalImage="https://images.unsplash.com/photo-1526455365195-86c9d2fd3ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=360b1ef63613cff85f354daeb68716d5&auto=format&fit=crop&w=1950&q=80"
+                  alt="Louise English Childminding"
+                />
+                <Boxes
+                  toggleModal={this.toggleModal2}
+                  nameLineOne="CHILDMINDING"
+                  nameLineTwo="BUSINESS"
+                  image={this.state.child}
+                  number={2}
+                />
+                
                 <ProjectModal
                   isOpen={this.state.modal4}
                   toggleModal={this.toggleModal4}
@@ -249,27 +284,7 @@ class Work extends React.Component {
                   nameLineTwo=""
                   image={this.state.portfolio}
                 />
-                <ProjectModal
-                  isOpen={this.state.modal5}
-                  toggleModal={this.toggleModal5}
-                  body={
-                    "A friend of mine graduated from university with a graphic design degree and asked if I could design and create a portfolio for him. I took on the task and developed the website using PHP."
-                  }
-                  title={"Clients Graphic Design Portfolio"}
-                  projectName="Graphic design portfolio"
-                  projectDate="October 2015"
-                  projectTech="HTML, CSS, PHP"
-                  url="https://jamiehaworth.herokuapp.com/"
-                  modalImage="https://images.pexels.com/photos/316465/pexels-photo-316465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  alt="Clients Graphic Design Portfolio"
-                />
-
-                <Boxes
-                  toggleModal={this.toggleModal5}
-                  nameLineOne="CLIENTS GRAPHIC "
-                  nameLineTwo=" DESIGN PORTFOLIO"
-                  image={this.state.graphic}
-                />
+                
                 <ProjectModal
                   isOpen={this.state.modal6}
                   toggleModal={this.toggleModal6}
@@ -298,6 +313,27 @@ class Work extends React.Component {
                   nameLineTwo="TEAM PROJECT"
                   image={this.state.internship}
                 />
+                <ProjectModal
+                  isOpen={this.state.modal5}
+                  toggleModal={this.toggleModal5}
+                  body={
+                    "A friend of mine graduated from university with a graphic design degree and asked if I could design and create a portfolio for him. I took on the task and developed the website using PHP."
+                  }
+                  title={"Clients Graphic Design Portfolio"}
+                  projectName="Graphic design portfolio"
+                  projectDate="October 2015"
+                  projectTech="HTML, CSS, PHP"
+                  url="https://jamiehaworth.herokuapp.com/"
+                  modalImage="https://images.pexels.com/photos/316465/pexels-photo-316465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="Clients Graphic Design Portfolio"
+                />
+
+                <Boxes
+                  toggleModal={this.toggleModal5}
+                  nameLineOne="CLIENTS GRAPHIC "
+                  nameLineTwo=" DESIGN PORTFOLIO"
+                  image={this.state.graphic}
+                />
               </Row>
             </Container>
           </TabPane>
@@ -311,6 +347,12 @@ class Work extends React.Component {
                   image={Covid}
                   toggleModal={this.toggleModal7}
                 />
+                {/* <Boxes
+                  nameLineOne="WEATHER FORECAST DASHBOARD"
+                  nameLineTwo=""
+                  image={Weather}
+                  toggleModal={this.toggleModal8}
+                /> */}
               </Row>
             </Container>
           </TabPane>

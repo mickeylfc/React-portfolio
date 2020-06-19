@@ -11,12 +11,8 @@ import ProjectsSection from "./projectsSection";
 class Home extends React.Component {
 
   state = {
-    // bg: document.body.style.background = `linear-gradient(
-    //   135deg,
-    //   #172a74 0,
-    //   #21a9af 71%,
-    //   #173e96 100%
-    // )`
+    bg: document.body.style.background = `white`
+    
   }
 
   componentDidMount() {
@@ -31,7 +27,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-wrapper">
-        <CustomNavbar color="white" />
+        <CustomNavbar color="black" />
         <Header />
         <AboutSection />
 

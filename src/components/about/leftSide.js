@@ -7,7 +7,7 @@ const LeftSide = () => {
     <Col
       style={{ background: "#E66767", padding: "20px", height: "100%", }}
       md="6"
-      id="left"
+      id="right"
     >
       <Row>
         <Col md="2">

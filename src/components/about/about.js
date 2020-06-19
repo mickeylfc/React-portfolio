@@ -17,12 +17,7 @@ class About extends React.Component {
     document.body.style.background = this.state.bg; // Set the style
     this.setState({ navBorder: "nav-border-bottom" });
   }
-
-
   render() {
-
-
-
     return (
         <div>
           <CustomNavbar color="white" aboutNavBorder={this.state.navBorder} />

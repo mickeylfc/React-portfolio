@@ -51,7 +51,7 @@ const AboutSection = () => {
                   personal skills, education, experience and hobbies.
                 </p>
                 <Link to="/about">
-                  <Button className="read-more-button">Read more</Button>
+                  <Button className="read-more-button">Read more<i class="ri-arrow-right-line"></i></Button>
                 </Link>
               </Col>
             </div>

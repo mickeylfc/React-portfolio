@@ -17,7 +17,7 @@ const Header = () => {
           actively looking for junior developer opportunities.{" "}
         </p>
         <Link className="portfolio-btn" to="/work">
-          <button className="btn btn-portfolio">PORTFOLIO</button>
+          <button className="btn btn-portfolio">Portfolio<i class="ri-arrow-right-line"></i></button>
         </Link>
         <div
           style={{
