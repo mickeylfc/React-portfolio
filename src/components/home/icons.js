@@ -6,7 +6,7 @@ const Icons = () => {
     <Zoom>
       <div
         style={{ paddingTop: "4em", textAlign: "center" }}
-        className="col-md-12 "
+        className="col-md-12 icon-row"
       >
         <div className="row">
           <div className="col">

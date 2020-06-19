@@ -584,7 +584,7 @@ a:hover {
 
   .intro-heading {
     grid-area: heading;
-    color: white;
+    color: black;
     margin: 5%;
     text-align: center;
   }
@@ -592,7 +592,12 @@ a:hover {
   .btn-portfolio {
     grid-area: btn;
     padding: 10%;
+    background: black;
   }
+
+  /* .portfolio-btn {
+    background: black;
+  } */
 
   .mac {
     grid-area: mac;
@@ -601,7 +606,7 @@ a:hover {
 
   .intro-text {
     grid-area: text;
-    color: white;
+    color: black;
     margin: 5%;
     text-align: center;
   }
@@ -640,9 +645,9 @@ a:hover {
 
   .btn-portfolio {
     font-size: 1.3rem;
-    background-color: white;
+    background-color: black;
     border: none;
-    color: black;
+    color: white;
     margin: 0 auto;
   }
 
@@ -680,6 +685,15 @@ a:hover {
     flex-direction: column;
     justify-self: center;
     text-align: center;
+  }
+
+  .about-mobile-text a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-row {
+    display: none;
   }
 
   #wrapper {
