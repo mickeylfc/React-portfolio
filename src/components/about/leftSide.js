@@ -5,8 +5,9 @@ import { Row, Col } from "reactstrap";
 const LeftSide = () => {
   return (
     <Col
-      style={{ background: "#E66767", padding: "20px", height: "100%" }}
+      style={{ background: "#E66767", padding: "20px", height: "100%", }}
       md="6"
+      id="left"
     >
       <Row>
         <Col md="2">

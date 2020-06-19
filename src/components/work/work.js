@@ -136,7 +136,6 @@ class Work extends React.Component {
                 <Boxes
                   toggleModal={this.toggleModal7}
                   nameLineOne="COVID-19 DASHBOARD"
-                  nameLineTwo="PERSONAL"
                   image={Covid}
                 />
 
@@ -159,7 +158,7 @@ class Work extends React.Component {
                   projectName="Techworld Lifestyle"
                   projectDate="June 2017"
                   ProjectTech="HTML, SASS, Ruby on Rails, Heroku, AWS"
-                  url="http://www.techworldlifestyle.com"
+                  url="https://techworlduk.herokuapp.com/"
                   github=""
                   modalImage="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1046925db0fb1f15417d71ad1676880&auto=format&fit=crop&w=1950&q=80"
                   alt="TechworldLifestyle"
@@ -184,7 +183,7 @@ class Work extends React.Component {
                   projectName="Louise's Childminding"
                   projectDate="December 2016"
                   projectTech="HTML, CSS, Ruby on Rails"
-                  url="http://www.louiseenglishchildminding.co.uk/"
+                  url="https://mam-web-new.herokuapp.com/"
                   modalImage="https://images.unsplash.com/photo-1526455365195-86c9d2fd3ef5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=360b1ef63613cff85f354daeb68716d5&auto=format&fit=crop&w=1950&q=80"
                   alt="Louise English Childminding"
                 />

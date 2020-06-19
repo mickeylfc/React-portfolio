@@ -16,19 +16,19 @@ const ProjectsSection = () => {
 
           <ProjectBox
             boxName="box1"
-            heading="University Final Project"
-            url="https://myuel-final-project-v3.herokuapp.com/"
+            heading="COVID-19 Dashboard"
+            url="https://coronavirus-covid19-stats.herokuapp.com/"
           />
 
           <ProjectBox
-            url="http://www.louiseenglishchildminding.co.uk"
+            url="https://techworlduk.herokuapp.com/"
             boxName="box2"
-            heading="Childminding Business"
+            heading="Technology Blog"
           />
           <ProjectBox
             boxName="box3"
-            heading="Technology Blog"
-            url="http://www.techworldlifestyle.com"
+            heading="Final Year University Project"
+            url="https://myuel-final-project-v3.herokuapp.com/users/sign_in"
           />
         </div>
       </div>

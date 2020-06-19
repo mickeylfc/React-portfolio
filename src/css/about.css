@@ -23,6 +23,7 @@
 
 #name {
   font-weight: 600;
+  padding-bottom: 5%;
 }
 
 #developer {
@@ -35,9 +36,10 @@
   width: 30%;
 }
 
-.about-text-wrapper {
-}
+
 
 .education {
   padding-top: 5%;
 }
+
+

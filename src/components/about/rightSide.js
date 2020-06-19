@@ -11,6 +11,7 @@ const RightSide = () => {
         backgroundColor: "white"
       }}
       md="6"
+      id="left"
     >
       <div className="avatar-wrapper">
         <img className="avatar" src={Profile} alt={Avatar} />
@@ -18,9 +19,9 @@ const RightSide = () => {
 
       <div className="name-heading">
         <h2 id="name">Michael English</h2>
-        <h4 id="developer">Developer</h4>
+        {/* <h4 id="developer">Developer</h4> */}
         <div className="d-flex justify-content-center">
-          <div id="developer-border" />
+         
         </div>
       </div>
       <div className="about-text-wrapper">

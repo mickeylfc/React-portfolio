@@ -302,7 +302,7 @@ a {
 
 #wrapper {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 50px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(200px, auto);
 
@@ -323,7 +323,7 @@ a {
   display: flex;
   grid-row: 1 / 3;
   grid-column: 2;
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/covid.png");
   background-size: cover;
   border-radius: var(--borderRadius);
 }
@@ -331,7 +331,7 @@ a {
 #box2 {
   display: flex;
   grid-area: box2;
-  background-image: url("../images/2.jpg");
+  background-image: url("../images/tech.png");
   background-size: cover;
   border-radius: var(--borderRadius);
 }
@@ -339,7 +339,7 @@ a {
 #box3 {
   display: flex;
   grid-area: box3;
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/uni.png");
   background-size: cover;
   border-radius: var(--borderRadius);
   grid-row: 3 / 5;
@@ -403,6 +403,8 @@ a:hover {
   color: white;
   text-align: center;
   align-self: center;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .button-view {
@@ -415,14 +417,13 @@ a:hover {
 
 .view-button {
   width: 100%;
-  height: 100%;
   border: none;
   border-radius: var(--borderRadius);;
   outline: none;
   background-color: white;
-  opacity: 0.4;
   color: black;
   padding: 10px;
+  font-weight: bold;
 }
 
 .btn:focus,
@@ -446,32 +447,29 @@ a:hover {
 
 .more-button {
   width: 100%;
-  height: 100%;
+  padding: 10px;
   border: none;
   border-radius: var(--borderRadius);;
   outline: none;
   background-color: white;
-  opacity: 0.4;
   color: black;
+  font-weight: bold;
 }
 
 .more-button:hover {
-  background: white;
-  color: black;
+  color: white;
   opacity: 1;
   border-radius: var(--borderRadius);
 }
 
 .view-button:hover {
-  background: white;
   opacity: 1;
-  color: black;
+  color: white;
   border-radius: var(--borderRadius);
   
 }
 
 .button-view:hover {
-  background: white;
   opacity: 1;
   color: black;
   border-radius: var(--borderRadius);
