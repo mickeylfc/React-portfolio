@@ -6,7 +6,7 @@ import { Consumer } from "../../contextapi/context";
 const ServicesSection = () => {
   return (
     <div className="services-wrapper">
-      <div className="container p-0">
+      <div className="container">
         <Col md="12">
           <h2 className="services-sub-heading">Services I can offer you</h2>
         </Col>

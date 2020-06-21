@@ -26,15 +26,16 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-wrapper">
+      <>
         <CustomNavbar color="black" />
         <Header />
         <AboutSection />
 
+
         <ProjectsSection />
         <ServicesSection />
         <Footer backgroundColor="#eef2f4" color="#536171" />
-      </div>
+      </>
     );
   }
 }
